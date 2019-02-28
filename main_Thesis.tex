@@ -1,0 +1,147 @@
+% ====================================================================
+%%- Archivo de ejemplo para la clase ThesisUTPL -%%
+% ====================================================================
+% Creado por: Francisco Alberto Sandoval Noreña
+% e-mail: fasandoval@utpl.edu.ec
+% Fecha: 11 de noviembre de 2018
+% Version: 0.1
+% ====================================================================
+%
+% - Opciones de la clase ThesisUTPL
+%
+% 1. Cantidad de autores de la tesis:
+% 	Opciones posibles: ``unAutor'', ``dosAutores'', ``tresAutores''
+%	Valor por defecto: ``unAutor''
+% 	Ej: \documentclass[tresAutores]{ThesisUTPL}
+%
+% 2. Estilo de Bibliografía
+%   Opciones posibles: ``APA'', ``IEEE''
+%   Valor por defecto: ``APA''
+%	Nota: Por favor revise las consideraciones en la compilación, dadas 
+% 	      en el documento de ejemplo, para el cambio entre opciones
+%
+% 3. Hiperenlaces: 
+%	Opción posible: ``hiperenlaces''
+%	Emplee la función si desea que se agregue hiperenlaces en el documento, 
+%   esto cubre el índice de contenidos, enlaces url, citas, y otros. 
+%
+% ====================================================================
+%
+% Class: ThesisUTPL
+\documentclass[unAutor, APA, hiperenlaces]{ThesisUTPL}
+%
+% Preámbulo:
+% 	Paquetes adicionados por el usuario, comandos nuevos, etc. 
+\input{DOCUMENTS/0_PREAMBULO}
+%
+% ====================================================================
+% Información básica del documento
+% ====================================================================
+%
+% Datos del primer autor.
+\autorNombresI{Francisco}										% Nombres del autor 1 del TT
+\autorApellidosI{Ramón}											% Apellidos del autor 1 del TT
+\autorCedulaI{0123456789}										% Cédula del autor del TT
+\autorGeneroI{m}												% Genero para la palabra: ``autor''. Opciones posibles: ``m'' (masculino), ``f'' (femenino)
+
+% Caso de múltiples autores
+%	Datos del segundo autor (optional)
+\autorNombresII{Harrison}										% Nombres del autor 1 del TT
+\autorApellidosII{Wells}										% Apellidos del autor 1 del TT
+\autorCedulaII{1234567890}										% Cédula del autor del TT
+%	Datos del tercer autor (opcional)
+\autorNombresIII{Barry}											% Nombres del autor 1 del TT
+\autorApellidosIII{Allen}										% Apellidos del autor 1 del TT
+\autorCedulaIII{2345678901}										% Cédula del autor del TT
+
+% Datos del Director(a) de la tesis
+\directorNombres{Joe}											% Nombres del Director del TT
+\directorApellidos{West}										% Apellidos del Director del TT
+\directorTitulo{Ingeniero}										% Titulo del Director del TT
+\directorTituloAbv{Ing.}										% Abreviación del título del director del TT
+\directorGenero{m}												% Genero para la palabra: ``director''. Opciones posibles: ``m'' (masculino), ``f'' (femenino)
+%
+% Datos de la Tesis
+\tema{Desequilibrios de la Fuerza de Velocidad}					% Título de la tesis (escrito en tipo oración)
+\titulacion{Maestría en Ciencias y Tecnologías de la Computación}					% Titulación
+\tituloObtenido{Maestría en Ciencias y Tecnologías de la Computación} 	% Título obtenido
+\area{Técnica}													% Área: Técnica, Administrativa, etc
+\ciudad{Loja}													% Ciudad de publicación de la tesis
+\pais{Ecuador}													% País de publicación de la tesis
+\mes{noviembre}													% mes de publicación de la tesis
+\ano{2018}														% año de publicación de la tesis
+%
+%
+% ====================================================================
+% Inicio del documento
+% ====================================================================
+%
+\begin{document}
+	%
+%%- Pre-Capítulos -%% ------------------------------------------------
+% 		Corresponde a todas las páginas iniciales como: Carátula, Aprobación del director, 
+%  		Dedicación de autoría y sesión de derechos, Dedicatoria, Agradecimiento, 
+%  		Listas de contenidos, Figuras y Tablas, Resumen, Abstract, etc.  		
+\input{DOCUMENTS/1_PRE-CAPITULOS}
+%	
+%%- Introducción-%% --------------------------------------------------
+% 		Se recomienda elaborar los archivos de texto en archivos independientes 
+%  		e incluirlos a través del comando input. 
+\begin{UnnumberedChapter}{INTRODUCCIÓN}
+	%	
+	\input{DOCUMENTS/2_INTRODUCCION}
+	%
+\end{UnnumberedChapter}
+%
+%
+% ====================================================================
+% Inicio de Capítulos
+% ====================================================================
+%
+% Formato para los capítulos
+\ChapterFormat
+%
+% Inicio del texto: Redacta los capítulos a continuación. La información 
+%  siguiente, es únicamente un ejemplo.
+%
+% Capítulo 1: (se recomienda redactar cada capítulo en un archivo independiente 
+%  y agregarlos al archivo principal a través del comando input)
+\input{DOCUMENTS/3_CAPITULO_1}
+%
+% Capítulo 2
+\input{DOCUMENTS/3_CAPITULO_2}
+%
+% ====================================================================
+% Parte Final del documento
+% ====================================================================
+%
+%%- Conclusiones -%% -------------------------------------------------
+\begin{UnnumberedChapter}{CONCLUSIONES}
+	%
+	\input{DOCUMENTS/4_CONCLUSIONES}
+	%
+\end{UnnumberedChapter}
+%
+%%- Recomendaciones -%% ----------------------------------------------	
+\begin{UnnumberedChapter}{RECOMENDACIONES}
+	%
+	\input{DOCUMENTS/5_RECOMENDACIONES}
+	%
+\end{UnnumberedChapter}
+%
+%%- Apéndice o anexos de la tesis -%% --------------------------------
+	% Los anexos son opcionales.
+\appendix
+%
+\chapter{ANEXOS}
+%
+\input{DOCUMENTS/6_ANEXO_1}
+
+
+%%- Página: Bibliografía -%% -----------------------------------------
+\paginaBibliografia{
+	% Archivo de biliografia
+	\bibliography{BibliographyUTPL}
+}
+	
+\end{document}
