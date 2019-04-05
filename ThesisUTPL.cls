@@ -1,6 +1,13 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
 %% LaTeX document class for typesetting theses of the UTPL
+%% 
+%% Version 0.3 
+%% Date: 31/03/2019
+%% Changes: 
+%%  - Corregido: espacio al inicio de la hoja para títulos de Índice de contenidos, 
+%%    Lista de Figuras y Lista de Tablas.
+%%  - Corregido: links en el Índice de contenidos para páginas iniciales.
 %%
 %% Version 0.2
 %% Date: 07/11/2018
@@ -16,7 +23,7 @@
 %% with new filenames distinct from ThesisUTPL.cls.
 %% 
 %% Based on the book class. 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \newcommand{\filedate}{} 
 \newcommand{\fileversion}{}
@@ -199,7 +206,7 @@
 %
 %%- Espacio entre 2 párrafos -%%
 %\setlength{\parskip}{12pt} % 12pt 
-
+%
 %
 % ====================================================================
 % Introducción de información básica
@@ -336,6 +343,7 @@
 %
 \newcommand{\paginaAprobacion}{%
 	\newpage
+	\phantomsection
 	\newcommand{\aprobacionTitleText}{\textbf{APROBACIÓN} \ifthenelse{\equal{\utpl@directorGenero}{m}}{\textbf{DEL DIRECTOR}}{\textbf{DE LA DIRECTORA}} \textbf{DEL TRABAJO DE TITULACIÓN}}
 	% Agregar contenido a la tabla de contenidos
 	\begin{center}
@@ -374,6 +382,7 @@
 %
 \newcommand{\paginaAutoria}{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{DECLARACIÓN DE AUTORÍA Y CESIÓN DE DERECHOS} % Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\textbf{DECLARACIÓN DE AUTORÍA Y CESIÓN DE DERECHOS} \\
@@ -439,6 +448,7 @@
 %
 \newcommand{\paginaDedicatoria}[1]{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{DEDICATORIA} % Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\textbf{DEDICATORIA} \\
@@ -452,6 +462,7 @@
 %
 \newcommand{\paginaAgradecimiento}[1]{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{AGRADECIMIENTO} % Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\textbf{AGRADECIMIENTO} \\
@@ -466,6 +477,7 @@
 \newcommand{\paginaListas}{%
 
 	\titleformat{\chapter}[hang]{\large\filcenter\scshape\bfseries}{}{0pt}{}
+	\titlespacing{\chapter}{0pt}{*0}{*1}
 	
 	\renewcommand{\contentsname}{ÍNDICE DE CONTENIDOS}%
 	\renewcommand{\listfigurename}{LISTA DE FIGURAS}%
@@ -485,6 +497,7 @@
 %
 \newcommand{\paginaResumen}[2]{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{RESUMEN} % Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\textbf{RESUMEN} \\
@@ -502,6 +515,7 @@
 %
 \newcommand{\paginaAbstract}[2]{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{ABSTRACT} % Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\textbf{ABSTRACT} \\
@@ -517,6 +531,7 @@
 %
 \newcommand{\paginaListaAbrSim}[3]{%
 	\newpage
+	\phantomsection
 	\addcontentsline{toc}{chapter}{#1} % Agregar contenido a la tabla de contenidos
 \begin{center}
 	\textbf{#1} \\
