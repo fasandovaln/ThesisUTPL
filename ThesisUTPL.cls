@@ -1,7 +1,14 @@
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%
+%% ===================================================================
 %% LaTeX document class for typesetting theses of the UTPL
+%% ===================================================================
+%%
+%% Creado por: Francisco Alberto Sandoval Noreña
+%% e-mail: fasandoval@utpl.edu.ec
 %% 
+%% ===================================================================
+%%
 %% Version 0.3 
 %% Date: 31/03/2019
 %% Changes: 
@@ -15,9 +22,7 @@
 %% Version 0.1
 %% Date: 18/03/2017
 %%
-%% Francisco Alberto Sandoval Noreña (fasandoval@utpl.edu.ec)
-%%
-%% -----------------------------------------------------------
+%% -------------------------------------------------------------------
 %% Copyright (C)
 %% Any modified versions of this file must be renamed
 %% with new filenames distinct from ThesisUTPL.cls.
