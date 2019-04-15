@@ -10,11 +10,12 @@
 %% ===================================================================
 %%
 %% Version 0.3 
-%% Date: 31/03/2019
+%% Date: 15/04/2019
 %% Changes: 
 %%  - Corregido: espacio al inicio de la hoja para títulos de Índice de contenidos, 
 %%    Lista de Figuras y Lista de Tablas.
 %%  - Corregido: links en el Índice de contenidos para páginas iniciales.
+%%  - Actualización de numeración de capítulo a número arábigo.
 %%
 %% Version 0.2
 %% Date: 07/11/2018
@@ -22,7 +23,7 @@
 %% Version 0.1
 %% Date: 18/03/2017
 %%
-%% -------------------------------------------------------------------
+%% ===================================================================
 %% Copyright (C)
 %% Any modified versions of this file must be renamed
 %% with new filenames distinct from ThesisUTPL.cls.
@@ -578,7 +579,7 @@
 %
 \newcommand{\ChapterFormat}{%
 	\setcounter{secnumdepth}{5}
-	\renewcommand{\thechapter}{\Roman{chapter}}
+%	\renewcommand{\thechapter}{\Roman{chapter}}
 	
 	\titleformat{\chapter}										% comand: \part, chapter, \section, etc
 		[display]												% shape
