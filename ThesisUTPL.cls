@@ -16,6 +16,7 @@
 %%    Lista de Figuras y Lista de Tablas.
 %%  - Corregido: links en el Índice de contenidos para páginas iniciales.
 %%  - Actualización de numeración de capítulo a número arábigo.
+%%  - Reducir espacio en listas (itemize y enumerate)
 %%
 %% Version 0.2
 %% Date: 07/11/2018
@@ -126,6 +127,7 @@
 
 % enumitem - Customize lists
 \RequirePackage{enumitem}
+%\setlist{nolistsep, topsep=-12pt} % reducir espacio en listas 
 
 % morefloats – Increase the number of simultaneous LATEX floats
 \RequirePackage[maxfloats=25]{morefloats}
@@ -408,7 +410,7 @@
 		``Nosotros %
 			\ifthenelse{\equal{\CantAutores}{dosAutores}}{\textit{\utpl@autorApellidosI \, \utpl@autorNombresI \, y \utpl@autorApellidosII \, \utpl@autorNombresII} \,}{}%
 			\ifthenelse{\equal{\CantAutores}{tresAutores}}{\utpl@autorApellidosI \, \utpl@autorNombresI, \, \utpl@autorApellidosII \, \utpl@autorNombresII \, y \utpl@autorApellidosIII \, \utpl@autorNombresIII \,}{}%
-		declaramos ser autores del presente trabajo de titulación: \textbf{\utpl@tema}, de la Titulación de \textit{\utpl@titulacion}, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos} \ \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y eximimos expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones legales. Además certificamos que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo, son de mnuestra exclusiva responsabilidad. \\
+		declaramos ser autores del presente trabajo de titulación: \textbf{\utpl@tema}, de la Titulación de \textit{\utpl@titulacion}, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos} \ \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y eximimos expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones legales. Además certificamos que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo, son de nuestra exclusiva responsabilidad. \\
 		%
 		Adicionalmente declaramos conocer y aceptar la disposición del Art. 88 del Estatuto Orgánico de la Universidad Técnica Particular de Loja que en su parte pertinente textualmente dice: “Forman parte del patrimonio de la Universidad la propiedad intelectual de investigaciones, trabajos científicos o técnicos y tesis de grado o trabajos de titulación que se realicen con el apoyo financiero, académico o institucional (operativo) de la Universidad'' \\
 		%
