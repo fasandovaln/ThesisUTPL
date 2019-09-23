@@ -140,7 +140,7 @@
 
 % enumitem - Customize lists
 \RequirePackage{enumitem}
-\setlist{nolistsep, topsep=-12pt, leftmargin=15pt} % reducir espacio en listas 
+\setlist{nolistsep, topsep=-12pt, left=0pt} % reducir espacio en listas 
 
 % morefloats – Increase the number of simultaneous LATEX floats
 \RequirePackage[maxfloats=25]{morefloats}
