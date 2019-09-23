@@ -81,7 +81,7 @@
 % ====================================================================
 %
 % Based on Book class
-\LoadClass[a4paper,11pt]{book} 
+\LoadClass[a4paper,11pt, oneside]{book} 
 %
 % ====================================================================
 % Paquetes requeridos
@@ -127,7 +127,7 @@
 
 % enumitem - Customize lists
 \RequirePackage{enumitem}
-\setlist{nolistsep, topsep=-12pt} % reducir espacio en listas 
+\setlist{nolistsep, topsep=-12pt, leftmargin=15pt} % reducir espacio en listas 
 
 % morefloats – Increase the number of simultaneous LATEX floats
 \RequirePackage[maxfloats=25]{morefloats}
@@ -305,7 +305,7 @@
 	\begin{center}	
 		\Large
 		
-		\includegraphics[width=0.18\textwidth]{FIGURES/utpl_escudo_azul} \\
+		\includegraphics[width=0.18\textwidth]{FIGURES/utpl_escudo_color} \\
 		
 		{\LARGE \textbf{UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA}} \\
 		\vspace{-0.2cm}
