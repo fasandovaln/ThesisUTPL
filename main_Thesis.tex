@@ -1,5 +1,5 @@
 % ====================================================================
-%%- Archivo de ejemplo para la clase ThesisUTPL -%%
+%%- Arvhivo de ejemplo para la clase ThesisUTPL -%%
 % ====================================================================
 % Creado por: Francisco Alberto Sandoval Noreña
 % e-mail: fasandoval@utpl.edu.ec
@@ -30,7 +30,7 @@
 % Class: ThesisUTPL
 \documentclass[unAutor, APA, hiperenlaces]{ThesisUTPL}
 %
-% Preámbulo:
+% Preambulo:
 % 	Paquetes adicionados por el usuario, comandos nuevos, etc. 
 \input{DOCUMENTS/0_PREAMBULO}
 %
@@ -65,11 +65,11 @@
 \tema{Desequilibrios de la Fuerza de Velocidad}					% Título de la tesis (escrito en tipo oración)
 \titulacion{Maestría en Ciencias y Tecnologías de la Computación}					% Titulación
 \tituloObtenido{Maestría en Ciencias y Tecnologías de la Computación} 	% Título obtenido
-\area{Técnica}													% Área: Técnica, Administrativa, etc
+\area{Técnica}													% Área: Técnica, Administricativa, etc
 \ciudad{Loja}													% Ciudad de publicación de la tesis
 \pais{Ecuador}													% País de publicación de la tesis
-\mes{noviembre}													% mes de publicación de la tesis
-\ano{2018}														% año de publicación de la tesis
+\mes{septiembre}												% mes de publicación de la tesis
+\ano{2019}														% año de publicación de la tesis
 %
 %
 % ====================================================================
@@ -79,7 +79,7 @@
 \begin{document}
 	%
 %%- Pre-Capítulos -%% ------------------------------------------------
-% 		Corresponde a todas las páginas iniciales como: Carátula, Aprobación del director, 
+% 		Corresponde a todas las páginas iniciales como: Caratula, Aprobación del director, 
 %  		Dedicación de autoría y sesión de derechos, Dedicatoria, Agradecimiento, 
 %  		Listas de contenidos, Figuras y Tablas, Resumen, Abstract, etc.  		
 \input{DOCUMENTS/1_PRE-CAPITULOS}
@@ -129,6 +129,11 @@
 	%
 \end{UnnumberedChapter}
 %
+%%- Página: Bibliografía -%% -----------------------------------------
+\paginaBibliografia{
+	% Archivo de biliografia
+	\bibliography{BibliographyUTPL}
+}
 %%- Apéndice o anexos de la tesis -%% --------------------------------
 	% Los anexos son opcionales.
 \appendix
@@ -138,10 +143,6 @@
 \input{DOCUMENTS/6_ANEXO_1}
 
 
-%%- Página: Bibliografía -%% -----------------------------------------
-\paginaBibliografia{
-	% Archivo de biliografia
-	\bibliography{BibliographyUTPL}
-}
+
 	
 \end{document}

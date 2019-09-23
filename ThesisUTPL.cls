@@ -9,6 +9,19 @@
 %% 
 %% ===================================================================
 %%
+%% Version 0.4
+%% Date: 23/09/2019
+%% Changes: 
+%% - Actualización de escudo a color en carátula de la primera página. 
+%% - Inversión de orden entre Bibliografía y Anexos. 
+%% - Corregido: Márgen similar para todas las páginas sin discriminación de página 
+%%   izquierda o derecha. (Sugerencia de biblioteca)
+%% - Corregido: Eliminación de hojas en blanco adicionales luego de fin de capítulo 
+%%   (Sugerencia de biblioteca).
+%% - Corregido: Eliminar espacio adicional de listas respecto al pàrrafo (sugerencia 
+%%   de biblioteca).
+%% - Corregido: Error tipográfico en cesión de derechos de autor para varios autores. 
+%%
 %% Version 0.3 
 %% Date: 15/04/2019
 %% Changes: 
@@ -34,8 +47,8 @@
 
 \newcommand{\filedate}{} 
 \newcommand{\fileversion}{}
-\renewcommand{\filedate}{2018/12/06}
-\renewcommand{\fileversion}{0.1}
+\renewcommand{\filedate}{2019/09/23}
+\renewcommand{\fileversion}{0.4}
 
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{ThesisUTPL}%

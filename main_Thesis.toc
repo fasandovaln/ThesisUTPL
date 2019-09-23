@@ -1,0 +1,48 @@
+\babel@toc {spanish}{}
+\contentsline {chapter}{PORTADA}{I}{Doc-Start}
+\contentsline {chapter}{APROBACI\IeC {\'O}N DEL DIRECTOR DEL TRABAJO DE TITULACI\IeC {\'O}N}{I}{section*.1}
+\contentsline {chapter}{DECLARACI\IeC {\'O}N DE AUTOR\IeC {\'I}A Y CESI\IeC {\'O}N DE DERECHOS}{II}{section*.2}
+\contentsline {chapter}{DEDICATORIA}{III}{section*.3}
+\contentsline {chapter}{AGRADECIMIENTO}{IV}{section*.4}
+\contentsline {chapter}{\IeC {\'I}NDICE DE CONTENIDOS}{VI}{chapter*.5}
+\contentsline {chapter}{LISTA DE FIGURAS}{VII}{chapter*.6}
+\contentsline {chapter}{LISTA DE TABLAS}{VIII}{chapter*.7}
+\contentsline {chapter}{RESUMEN}{1}{section*.8}
+\contentsline {chapter}{ABSTRACT}{2}{section*.9}
+\contentsline {chapter}{LISTA DE ABREVIATURAS}{3}{section*.10}
+\contentsline {chapter}{LISTA DE S\IeC {\'I}MBOLOS}{4}{section*.11}
+\contentsline {chapter}{INTRODUCCI\IeC {\'O}N}{5}{chapter*.12}
+\contentsline {section}{Section 1}{5}{Item.7}
+\contentsline {subsection}{Subsection 1}{7}{section*.13}
+\contentsline {subsubsection}{Subsubsection 1}{7}{section*.13}
+\contentsline {paragraph}{paragraph 1}{7}{section*.13}
+\contentsline {subparagraph}{subparagraph 1}{8}{section*.13}
+\contentsline {section}{Section 2}{8}{section*.13}
+\contentsline {chapter}{\numberline {1}FORMATO DE LOS CAP\IeC {\'I}TULOS}{10}{chapter.1}
+\contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n de la plantilla}{11}{section.1.1}
+\contentsline {section}{\numberline {1.2}C\IeC {\'o}mo iniciar la escritura de una tesis nueva con la plantilla}{11}{section.1.2}
+\contentsline {section}{\numberline {1.3}Estructura del documento que se genera}{11}{section.1.3}
+\contentsline {section}{\numberline {1.4}Clase de documento y opciones}{13}{section.1.4}
+\contentsline {section}{\numberline {1.5}Paquetes empleados en la plantilla}{13}{section.1.5}
+\contentsline {section}{\numberline {1.6}Particularidades de la plantilla}{14}{section.1.6}
+\contentsline {subsection}{\numberline {1.6.1}Figuras}{15}{subsection.1.6.1}
+\contentsline {subsection}{\numberline {1.6.2}Tablas}{15}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Ecuaciones}{16}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{16}{subsection.1.6.4}
+\contentsline {chapter}{\numberline {2}Heading on level\xspace 0 (chapter)}{18}{chapter.2}
+\contentsline {section}{\numberline {2.1}Heading on level\xspace 1 (section)}{19}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Heading on level\xspace 2 (subsection)}{19}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Heading on level\xspace 3 (subsubsection)}{20}{subsubsection.2.1.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.1.1}Heading on level\xspace 4 (paragraph)}{20}{paragraph.2.1.1.1.1}
+\contentsline {section}{\numberline {2.2}Lists}{20}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Example for list\xspace (itemize)}{20}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Example for list\xspace (4*itemize)}{21}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}Example for list\xspace (enumerate)}{21}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Example for list\xspace (4*enumerate)}{21}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}Example for list\xspace (description)}{21}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Example for list\xspace (4*description)}{22}{subsubsection.2.2.3.1}
+\contentsline {chapter}{CONCLUSIONES}{25}{chapter*.16}
+\contentsline {chapter}{RECOMENDACIONES}{27}{chapter*.17}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{28}{chapter*.18}
+\contentsline {chapter}{ANEXOS}{29}{appendix*.19}
+\contentsline {section}{Anexo 1: Acelerador de Part\IeC {\'\i }culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{29}{section*.20}
