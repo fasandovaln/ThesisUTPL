@@ -10,6 +10,12 @@
 %% ===================================================================
 %%
 %% Version 0.4
+%% Date: 09/10/2019
+%% Changes:
+%% - Corregido: Alineación de palabra ``Trabajo de Titulación.'' en la carátula por
+%%   sugerencia de Biblioteca
+%% - Corregido: Formato de labels para sublistas y espacio en listas. 
+%%
 %% Date: 23/09/2019
 %% Changes: 
 %% - Actualización de escudo a color en carátula de la primera página. 
@@ -140,7 +146,12 @@
 
 % enumitem - Customize lists
 \RequirePackage{enumitem}
-\setlist{nolistsep, topsep=-12pt, left=0pt} % reducir espacio en listas 
+\setlist{noitemsep, nosep, left=0pt} % reducir espacio en listas 
+% formato para labels en sublistas 
+\setlist[enumerate,1]{label = \arabic*.}
+\setlist[enumerate,2]{label = \emph{\alph*}.}
+\setlist[enumerate,3]{label = \roman*.}
+\setlist[enumerate,4]{label = \Alph*.}
 
 % morefloats – Increase the number of simultaneous LATEX floats
 \RequirePackage[maxfloats=25]{morefloats}
@@ -557,6 +568,7 @@
 \begin{center}
 	\textbf{#1} \\
 \end{center}
+\vspace{5pt}
 \begin{description}[font=\sffamily\normalfont, leftmargin=#2cm, style=nextline,] % labelindent=-2em
 	#3	
 \end{description}
