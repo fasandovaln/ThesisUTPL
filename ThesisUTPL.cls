@@ -331,9 +331,9 @@
 		\vspace{0.5cm}
 		\textbf{\utpl@tema} \\
 		\vspace{0.5cm}
-		\begin{center}
-			TRABAJO DE TITULACIÓN \\
-		\end{center}
+		\begin{flushright}
+			TRABAJO DE TITULACIÓN. \textcolor{white}{\hspace{1cm}}  \\
+		\end{flushright}
 		\vspace{0.5cm}
 		\begin{flushleft}
 			\ifthenelse{\equal{\CantAutores}{unAutor}}%
