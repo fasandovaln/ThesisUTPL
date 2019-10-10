@@ -9,13 +9,21 @@
 %% 
 %% ===================================================================
 %%
-%% Version 0.4
+%% Version 1.0.0
+%% Date: 10/10/2019
+%% Changes: 
+%% - Plantilla aprobada por la Biblioteca de la UTPL, una vez implementados todos los 
+%%   cambios sugeridos. 
+%% - Inicio del empleo de una modificación de Semantic Versioning para el versionado.
+%%
+%% Version 0.41
 %% Date: 09/10/2019
 %% Changes:
 %% - Corregido: Alineación de palabra ``Trabajo de Titulación.'' en la carátula por
 %%   sugerencia de Biblioteca
 %% - Corregido: Formato de labels para sublistas y espacio en listas. 
 %%
+%% Version 0.4
 %% Date: 23/09/2019
 %% Changes: 
 %% - Actualización de escudo a color en carátula de la primera página. 

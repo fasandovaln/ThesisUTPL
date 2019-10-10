@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  23 SEP 2019 13:06
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  10 OCT 2019 18:27
 entering extended mode
 **./main_Thesis.tex
 (main_Thesis.tex
@@ -440,7 +440,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 168.
+Package hyperref Info: Option `colorlinks' set `true' on input line 187.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -571,28 +571,28 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 79.
-LaTeX Font Info:    ... okay on input line 79.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 79.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
+LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 85.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 79.
-LaTeX Info: Redefining \. on input line 79.
-LaTeX Info: Redefining \% on input line 79.
+(Font)              scaled to size 10.40245pt on input line 85.
+LaTeX Info: Redefining \. on input line 85.
+LaTeX Info: Redefining \% on input line 85.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count159
@@ -621,7 +621,7 @@ G,.JBIG2,.JB2,.eps]
 )
 \c@lstlisting=\count165
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 79.
+Package hyperref Info: Link coloring ON on input line 85.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -631,9 +631,9 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count166
 )
-LaTeX Info: Redefining \ref on input line 79.
-LaTeX Info: Redefining \pageref on input line 79.
-LaTeX Info: Redefining \nameref on input line 79.
+LaTeX Info: Redefining \ref on input line 85.
+LaTeX Info: Redefining \pageref on input line 85.
+LaTeX Info: Redefining \nameref on input line 85.
 
 (main_Thesis.out) (main_Thesis.out)
 \@outlinefile=\write3
@@ -832,28 +832,28 @@ Package blindtext Warning: spanish not defined, using English instead.
 [7])
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 [8]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 94.
+(blindtext)                 on input line 100.
 
 (DOCUMENTS/3_CAPITULO_1.tex [9]
 Cap\'{\i }tulo 1.
@@ -870,31 +870,35 @@ LaTeX Font Info:    Try loading font information for T1+cmtt on input line 20.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 24.
-LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 24.
- [11
+Overfull \hbox (0.53378pt too wide) in paragraph at lines 23--24
+[]\T1/phv/m/n/12 Descargar los do-cu-men-tos de la plan-ti-lla de [][]$https : 
+/ / github . com / fasandovaln / ThesisUTPL$[][]. 
+ []
 
-]
-[12]
-Overfull \hbox (23.99998pt too wide) in alignment at lines 88--109
+LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 25.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 7.59998pt on input line 25.
+[11
+
+] [12] [13]
+Overfull \hbox (23.99998pt too wide) in alignment at lines 90--111
  [] [] 
  []
 
-[13]
-Overfull \hbox (23.99998pt too wide) in alignment at lines 109--114
+
+Overfull \hbox (23.99998pt too wide) in alignment at lines 111--116
  [] [] 
  []
 
 [14]
-<FIGURES/UTPL_cruz.png, id=328, 803.0pt x 602.25pt>
+<FIGURES/UTPL_cruz.png, id=331, 803.0pt x 602.25pt>
 File: FIGURES/UTPL_cruz.png Graphic file (type png)
 <use FIGURES/UTPL_cruz.png>
-Package pdftex.def Info: FIGURES/UTPL_cruz.png  used on input line 130.
+Package pdftex.def Info: FIGURES/UTPL_cruz.png  used on input line 132.
 (pdftex.def)             Requested size: 319.1176pt x 239.34268pt.
 
-Overfull \hbox (0.72993pt too wide) in paragraph at lines 141--142
+Overfull \hbox (0.72993pt too wide) in paragraph at lines 143--144
 \T1/phv/m/n/12 bla res-pec-to al an-cho de la pá-gi-na. Por otra par-te, el co-
 man-do [][][][][]
  []
@@ -902,7 +906,7 @@ man-do [][][][][]
 [15 <./FIGURES/UTPL_cruz.png>]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 145.
+               Default added (so using `tbp') on input line 147.
 
 [16]) (DOCUMENTS/3_CAPITULO_2.tex [17]
 Cap\'{\i }tulo 2.
@@ -942,14 +946,13 @@ Package blindtext Warning: spanish not defined, using English instead.
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 12.
 
-[20]
 LaTeX Font Info:    Try loading font information for OMS+phv on input line 12.
- ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\omsphv.fd"
 File: omsphv.fd 
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
-
+ [20]
 
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 12.
@@ -988,30 +991,30 @@ Package blindtext Warning: spanish not defined, using English instead.
 ) [24] (DOCUMENTS/4_CONCLUSIONES.tex)
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 [25
 
 ]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 123.
+(blindtext)                 on input line 129.
 
 [26] (DOCUMENTS/5_RECOMENDACIONES.tex) [27
 
@@ -1031,52 +1034,52 @@ Package hyperref Warning: The anchor of a bookmark and its parent's must not
 )
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
 [29
 
 ]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 144.
+(blindtext)                 on input line 150.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 148.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
 [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 148.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (main_Thesis.aux
 LaTeX Info: Redefining \. on input line 24.
 LaTeX Info: Redefining \% on input line 24.
 )
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 148.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 148.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main_Thesis.out' has not changed.
 (rerunfilecheck)             Checksum: 63D9365ADD858260432A1D16A452777B;2657.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 148.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 13941 strings out of 492969
- 202530 string characters out of 3133186
- 539292 words of memory out of 3000000
- 17404 multiletter control sequences out of 15000+200000
- 57715 words of font info for 73 fonts, out of 3000000 for 9000
+ 13952 strings out of 492969
+ 202654 string characters out of 3133186
+ 536337 words of memory out of 3000000
+ 17412 multiletter control sequences out of 15000+200000
+ 58869 words of font info for 74 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,12n,67p,745b,2283s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,12n,67p,745b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\fas
 andoval\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
@@ -1093,9 +1096,9 @@ nts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
 1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
 imes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
 .pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_Thesis.pdf (39 pages, 1391564 bytes).
+Output written on main_Thesis.pdf (39 pages, 1392163 bytes).
 PDF statistics:
- 569 PDF objects out of 1000 (max. 8388607)
- 122 named destinations out of 1000 (max. 500000)
+ 572 PDF objects out of 1000 (max. 8388607)
+ 124 named destinations out of 1000 (max. 500000)
  323 words of extra memory for PDF output out of 10000 (max. 10000000)
 

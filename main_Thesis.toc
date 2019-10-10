@@ -24,11 +24,11 @@
 \contentsline {section}{\numberline {1.3}Estructura del documento que se genera}{11}{section.1.3}
 \contentsline {section}{\numberline {1.4}Clase de documento y opciones}{13}{section.1.4}
 \contentsline {section}{\numberline {1.5}Paquetes empleados en la plantilla}{13}{section.1.5}
-\contentsline {section}{\numberline {1.6}Particularidades de la plantilla}{14}{section.1.6}
+\contentsline {section}{\numberline {1.6}Particularidades de la plantilla}{15}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Figuras}{15}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Tablas}{15}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.2}Tablas}{16}{subsection.1.6.2}
 \contentsline {subsection}{\numberline {1.6.3}Ecuaciones}{16}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{16}{subsection.1.6.4}
+\contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{17}{subsection.1.6.4}
 \contentsline {chapter}{\numberline {2}Heading on level\xspace 0 (chapter)}{18}{chapter.2}
 \contentsline {section}{\numberline {2.1}Heading on level\xspace 1 (section)}{19}{section.2.1}
 \contentsline {subsection}{\numberline {2.1.1}Heading on level\xspace 2 (subsection)}{19}{subsection.2.1.1}

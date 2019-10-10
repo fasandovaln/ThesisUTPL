@@ -20,18 +20,20 @@
 Los pasos que debe seguir para empezar la escritura de una tesis nueva con la plantilla \texttt{ThesisUTPL.cls} son los siguientes: 
 
 \begin{enumerate}
+	\item Descargar los documentos de la plantilla de \url{https://github.com/fasandovaln/ThesisUTPL}.
 	\item Duplicar la carpeta de ejemplo que ha descargado. 
 	\item Abrir el fichero ``\lstinline|main_Thesis.tex|'' con su editor preferido de \LaTeX.
 	\item Guarde el archivo con un nuevo nombre. 
-	\item Antes de realizar cualquier cambio, compile el archivo para verificar que no existe ningún error. Luego de la compilación debería obtener como resultado un documento similar a éste. Puede requerir instalar nuevos paquetes a su distribución o actualizarla para compilar correctamente. 
+	\item Antes de realizar cualquier cambio, compile el archivo para verificar que no existe ningún error. Luego de la compilación debería obtener como resultado un documento similar a este. Puede requerir instalar nuevos paquetes a su distribución o actualizarla para compilar correctamente. 
 	\item Seleccione las opciones de la clase de acuerdo a su necesidad. 
 	\item Modifique la información básica de acuerdo a su caso. 
-	\item Tenga en cuenta que se ha creado una carpeta para las Figuras y otra para los documentos. Trate de mantener ese orden. En la carpeta ``DOCUMENTS'' se encuentran archivos ``\texttt{.tex}'' que corresponden a las diferentes partes del documento. 
+	\item Tenga en cuenta que se ha creado una carpeta para las figuras y otra para los documentos. Trate de mantener ese orden. En la carpeta ``DOCUMENTS'' se encuentran archivos ``\texttt{.tex}'' que corresponden a las diferentes partes del documento. 
 	\item Escriba cada capítulo en un fichero ``\texttt{.tex}'' independiente y guárdelo en la carpeta ``DOCUMENTS''. Agréguelos en el punto del documento deseado utilizando para ello el comando:
 	\begin{center}
 		\lstinline|\input{DOCUMENTS/nombre_del_fichero.tex}|.
 	\end{center}
 	\item Utilice las indicaciones dadas en este capítulo para el manejo de figuras, tablas, ecuaciones, etc. Además, recuerde compilar frecuentemente el documento. 
+	\item \textbf{Sugerencia:} Recuerde revisar, previo a la presentación final de su tesis en Biblioteca, el repositorio de la plantilla, ya que se realizan actualizaciones en relación a los cambios sugeridos por Biblioteca o los errores reportados. 
 \end{enumerate}
 
 \section{Estructura del documento que se genera}
@@ -55,7 +57,7 @@ El documento final generado (en formato PDF) tendrá la siguiente estructura:
 	\item \textbf{Conclusiones}. Las conclusiones deben ser agregadas en el archivo CONCLUSIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.  
 	\item \textbf{Recomendaciones}. Las recomendaciones deben ser agregadas en el archivo RECOMENDACIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.   	
 	\item \textbf{Anexos}. Se recomienda crear los Anexos en archivos separados. El archivo ANEXO1 es un ejemplo que puede comentar para incluir su información.  
-	\item \textbf{Bibliografía}. Se puede escoger entre dos estilos para citar: APA o IEEE.
+	\item \textbf{Bibliografía}. Se puede escoger entre dos estilos para citar: APA o IEEE. 
 \end{itemize}
 
 \section{Clase de documento y opciones}
