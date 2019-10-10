@@ -29,6 +29,10 @@ Las pruebas de esta plantilla fueron realizadas con _**Miktex 2.9**_ sobre Windo
 
 Puedes sugerir cambios en la plantilla o notificar errores a través del correo electrónico [Francisco Sandoval](mailto:fasandoval@utpl.edu.ec?subject=ThesisUTPL-Latex). Por favor, agregua como título del mensaje "ThesisUTPL-Latex".
 
+## Versionado 📌
+
+Se usa una modificación de [SemVer](http://semver.org/) para el versionado.
+
 ## Autor ✒️
 
 * **Francisco Alberto Sandoval Noreña** - *Creación de plantilla y documentanción* - [fasandovaln](https://github.com/fasandovaln).
