@@ -27,22 +27,22 @@ Las pruebas de esta plantilla fueron realizadas con _**Miktex 2.9**_ sobre Windo
 
 ## Contribuyendo 🖇️
 
-Puedes sugerir cambios en la plantilla y notificar errores a través del correo electrónico [Francisco Sandoval](mailto:fasandoval@utpl.edu.ec?subject=ThesisUTPL-Latex). Por favor, agregua como título del mensaje "ThesisUTPL-Latex".
+Puedes sugerir cambios en la plantilla o notificar errores a través del correo electrónico [Francisco Sandoval](mailto:fasandoval@utpl.edu.ec?subject=ThesisUTPL-Latex). Por favor, agregua como título del mensaje "ThesisUTPL-Latex".
 
 ## Autor ✒️
 
-* **Francisco Alberto Sandoval Noreña** - *Creación de plantilla y documentanción* - [fasandovaln](https://github.com/fasandovaln)
+* **Francisco Alberto Sandoval Noreña** - *Creación de plantilla y documentanción* - [fasandovaln](https://github.com/fasandovaln).
 
 ## Licencia 📄
 
-Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE](https://github.com/fasandovaln/ThesisUTPL/blob/master/LICENSE) para detalles
+Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE](https://github.com/fasandovaln/ThesisUTPL/blob/master/LICENSE) para detalles.
 
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre esta plantilla 📢
-* Invita una cerveza 🍺 a alguien del equipo. 
-* Da las gracias públicamente 🤓.
+* Invítame un café :coffee:
+* Da las gracias públicamente 🤓
 * etc.
 
 ---
-El formato del archivo readme ha sido basado en la plantilla realizada por [Villanuevand](https://github.com/Villanuevand)
+**Nota:** El formato del archivo readme ha sido basado en la [plantilla](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a) realizada por [Villanuevand](https://github.com/Villanuevand).
