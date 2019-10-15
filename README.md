@@ -44,6 +44,7 @@ Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE](htt
 ## Expresiones de Gratitud 🎁
 
 * Comenta a otros sobre esta plantilla 📢
+* Comparte en redes sociales la plantilla :+1:
 * Invítame un café :coffee:
 * Da las gracias públicamente 🤓
 * etc.
