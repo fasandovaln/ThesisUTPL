@@ -50,4 +50,4 @@ Este proyecto está bajo la Licencia (GNU GPLv3) - mira el archivo [LICENSE](htt
 * etc.
 
 ---
-**Nota:** El formato del archivo readme ha sido basado en la [plantilla](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a) realizada por [Villanuevand](https://github.com/Villanuevand).
+**Nota:** El formato del archivo _readme_ ha sido basado en la [plantilla](https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a) realizada por [Villanuevand](https://github.com/Villanuevand).
