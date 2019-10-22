@@ -27,7 +27,7 @@ Las pruebas de esta plantilla fueron realizadas con _**Miktex 2.9**_ sobre Windo
 
 ## Contribuyendo 🖇️
 
-Puedes sugerir cambios en la plantilla o notificar errores a través del correo electrónico [Francisco Sandoval](mailto:fasandoval@utpl.edu.ec?subject=ThesisUTPL-Latex). Por favor, agregua como título del mensaje "ThesisUTPL-Latex".
+Puedes sugerir cambios en la plantilla o notificar errores escribiendo al correo electrónico de [Francisco Sandoval](mailto:fasandoval@utpl.edu.ec?subject=ThesisUTPL-Latex). Por favor, agregua como título del mensaje "ThesisUTPL-Latex".
 
 ## Versionado 📌
 
