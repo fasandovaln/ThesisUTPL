@@ -26,23 +26,22 @@
 \contentsline {section}{\numberline {1.5}Paquetes empleados en la plantilla}{13}{section.1.5}
 \contentsline {section}{\numberline {1.6}Particularidades de la plantilla}{15}{section.1.6}
 \contentsline {subsection}{\numberline {1.6.1}Figuras}{15}{subsection.1.6.1}
-\contentsline {subsection}{\numberline {1.6.2}Tablas}{16}{subsection.1.6.2}
-\contentsline {subsection}{\numberline {1.6.3}Ecuaciones}{16}{subsection.1.6.3}
-\contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{17}{subsection.1.6.4}
-\contentsline {chapter}{\numberline {2}Heading on level\xspace 0 (chapter)}{18}{chapter.2}
-\contentsline {section}{\numberline {2.1}Heading on level\xspace 1 (section)}{19}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Heading on level\xspace 2 (subsection)}{19}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Heading on level\xspace 3 (subsubsection)}{20}{subsubsection.2.1.1.1}
-\contentsline {paragraph}{\numberline {2.1.1.1.1}Heading on level\xspace 4 (paragraph)}{20}{paragraph.2.1.1.1.1}
-\contentsline {section}{\numberline {2.2}Lists}{20}{section.2.2}
-\contentsline {subsection}{\numberline {2.2.1}Example for list\xspace (itemize)}{20}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Example for list\xspace (4*itemize)}{21}{subsubsection.2.2.1.1}
-\contentsline {subsection}{\numberline {2.2.2}Example for list\xspace (enumerate)}{21}{subsection.2.2.2}
-\contentsline {subsubsection}{\numberline {2.2.2.1}Example for list\xspace (4*enumerate)}{21}{subsubsection.2.2.2.1}
-\contentsline {subsection}{\numberline {2.2.3}Example for list\xspace (description)}{21}{subsection.2.2.3}
-\contentsline {subsubsection}{\numberline {2.2.3.1}Example for list\xspace (4*description)}{22}{subsubsection.2.2.3.1}
-\contentsline {chapter}{CONCLUSIONES}{25}{chapter*.16}
-\contentsline {chapter}{RECOMENDACIONES}{27}{chapter*.17}
-\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{28}{chapter*.18}
-\contentsline {chapter}{ANEXOS}{29}{appendix*.19}
-\contentsline {section}{Anexo 1: Acelerador de Part\IeC {\'\i }culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{29}{section*.20}
+\contentsline {subsection}{\numberline {1.6.2}Tablas}{15}{subsection.1.6.2}
+\contentsline {subsection}{\numberline {1.6.3}Ecuaciones}{18}{subsection.1.6.3}
+\contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{18}{subsection.1.6.4}
+\contentsline {chapter}{\numberline {2}Heading on level\xspace 0 (chapter)}{20}{chapter.2}
+\contentsline {section}{\numberline {2.1}Heading on level\xspace 1 (section)}{21}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Heading on level\xspace 2 (subsection)}{21}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Heading on level\xspace 3 (subsubsection)}{22}{subsubsection.2.1.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.1.1}Heading on level\xspace 4 (paragraph)}{22}{paragraph.2.1.1.1.1}
+\contentsline {section}{\numberline {2.2}Lists}{22}{section.2.2}
+\contentsline {subsection}{\numberline {2.2.1}Example for list\xspace (itemize)}{22}{subsection.2.2.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Example for list\xspace (4*itemize)}{23}{subsubsection.2.2.1.1}
+\contentsline {subsection}{\numberline {2.2.2}Example for list\xspace (enumerate)}{23}{subsection.2.2.2}
+\contentsline {subsubsection}{\numberline {2.2.2.1}Example for list\xspace (4*enumerate)}{23}{subsubsection.2.2.2.1}
+\contentsline {subsection}{\numberline {2.2.3}Example for list\xspace (description)}{23}{subsection.2.2.3}
+\contentsline {subsubsection}{\numberline {2.2.3.1}Example for list\xspace (4*description)}{24}{subsubsection.2.2.3.1}
+\contentsline {chapter}{CONCLUSIONES}{27}{chapter*.17}
+\contentsline {chapter}{RECOMENDACIONES}{29}{chapter*.18}
+\contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{30}{chapter*.19}
+\contentsline {chapter}{Anexo \numberline {A}Acelerador de Part\IeC {\'\i }culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{31}{Anexo.1.Alph1}

@@ -3,7 +3,11 @@
 % ====================================================================
 % Creado por: Francisco Alberto Sandoval Noreña
 % e-mail: fasandoval@utpl.edu.ec
-% Fecha: 11 de noviembre de 2018
+% 
+% Version 1.1.0
+% Date: 07/11/2019
+%
+% Fecha de creación: 11 de noviembre de 2018
 % Version: 0.1
 % ====================================================================
 %
@@ -56,8 +60,8 @@ El documento final generado (en formato PDF) tendrá la siguiente estructura:
 	\item \textbf{Capítulos de la Tesis}. Se recomienda escribir cada capítulo en un archivo diferente. Los capítulos agregados aquí son únicamente de ejemplo. Usted puede comentarlos y agregar sus archivos.  
 	\item \textbf{Conclusiones}. Las conclusiones deben ser agregadas en el archivo CONCLUSIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.  
 	\item \textbf{Recomendaciones}. Las recomendaciones deben ser agregadas en el archivo RECOMENDACIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.   	
-	\item \textbf{Anexos}. Se recomienda crear los Anexos en archivos separados. El archivo ANEXO1 es un ejemplo que puede comentar para incluir su información.  
-	\item \textbf{Bibliografía}. Se puede escoger entre dos estilos para citar: APA o IEEE. 
+	\item \textbf{Bibliografía}. Se puede escoger entre dos estilos para citar: APA o IEEE.
+	\item \textbf{Anexos}. Se recomienda crear los Anexos en archivos separados. El archivo ANEXO1 es un ejemplo que puede comentar para incluir su información.   
 \end{itemize}
 
 \section{Clase de documento y opciones}
@@ -88,31 +92,34 @@ Las posibles opciones con las que se puede configurar el documento son:
 A continuación se presenta los paquetes empleados en la plantilla. Usted puede agregar paquetes adicionales de acuerdo a su necesidad en el archivo ``\lstinline|0_PREAMBULO.tex|'' que se encuentra en la carpeta ``DOCUMENTS''. Sin embargo, recuerde que algunos paquetes pueden ser incompatibles con otros por lo que es importante que verifique si el paquete que va a agregar es compatible con los empleados en la plantilla. Los paquetes empleados son los siguientes: 
 
 \begin{longtable}{p{.18\textwidth} p{0.82\textwidth}}
-	\texttt{ifthen}  	& Conditional commands in LaTeX documents.  \\  
-	\texttt{inputec} 	& Accept different input encodings. Opción: utf8. \\ 
-	\texttt{fontenc} 	& Standard package for selecting font encodings. Opción: T1. \\
-	\texttt{babel} 	 	& Simplified Spanish support for Babel (hyphenation). Opción: spanish. \\
-	\texttt{helvet}  	& URW Arial font pack for use with LATEX. Opción: scaled\\
-	\texttt{amsmath} 	& Soport math simbols-fonts. \\
-	\texttt{amssymb}    & Soport math simbols-fonts.\\
-	\texttt{amsfonts} 	& Soport math simbols-fonts.\\
-	\texttt{latexsym} 	& Soport math simbols-fonts.\\
-	\texttt{graphicx} 	& Enhanced support for graphics.\\
-	\texttt{xcolor} 	& Driver-independent color extensions for LATEX and pdfLATEX. Opciones: x11names, table. \\
-	\texttt{subfigure} 	& Figures divided into subfigures. \\
-	\texttt{longtable} 	& Allow tables to flow over page boundaries. \\
-	\texttt{multirow}  	& Create tabular cells spanning multiple rows. \\
-	\texttt{booktabs} 	&  Publication quality tables in LATEX \\
-	\texttt{listings} 	& source code printer for LATEX 	 \\
-	\texttt{enumitem} 	& Customize lists \\
-	\texttt{morefloats} & Increase the number of simultaneous LATEX floats. Opción: maxfloats=25. \\
-	\texttt{url} 		& Verbatim with URL-sensitive line breaks. Opción: hyphens. \\
-	\texttt{hyperref} 	& Extensive support for hypertext in LATEX. Opción: breaklinks=true. \\
-	\texttt{titlesec} 	& Modify title format. \\
-	\texttt{vmargin} 	& Margins and paper sizes. \\
-	\texttt{fancyhdr} 	& Page layout  \\
-	\texttt{caption} 	& The caption package provides many ways to customise the captions infloating environments such figure and table.\\
-	\texttt{natbib} 	& pack­age that im­ple­ments both au­thor-year and num­bered ref­er­ences
+	\texttt{ifthen}  	& \textit{Conditional commands in LaTeX documents.}  \\  
+	\texttt{inputec} 	& \textit{Accept different input encodings. Opción: utf8.} \\ 
+	\texttt{fontenc} 	& \textit{Standard package for selecting font encodings. Opción: T1.} \\
+	\texttt{setspace}   & \textit{Spacing between lines} \\ 
+	\texttt{babel} 	 	& \textit{Simplified Spanish support for Babel (hyphenation). Opción: spanish.} \\
+	\texttt{helvet}  	& \textit{URW Arial font pack for use with LATEX. Opción: scaled}\\
+	\texttt{amsmath} 	& \textit{Soport math simbols-fonts.} \\
+	\texttt{amssymb}    & \textit{Soport math simbols-fonts.}\\
+	\texttt{amsfonts} 	& \textit{Soport math simbols-fonts.}\\
+	\texttt{latexsym} 	& \textit{Soport math simbols-fonts.}\\
+	\texttt{graphicx} 	& \textit{Enhanced support for graphics.}\\
+	\texttt{xcolor} 	& \textit{Driver-independent color extensions for LATEX and pdfLATEX. Opciones: x11names, table.} \\
+	\texttt{subfigure} 	& \textit{Figures divided into subfigures.} \\
+	\texttt{longtable} 	& \textit{Allow tables to flow over page boundaries.} \\
+	\texttt{multirow}  	& \textit{Create tabular cells spanning multiple rows.} \\
+	\texttt{booktabs} 	& \textit{Publication quality tables in LATEX} \\
+	\texttt{listings} 	& \textit{source code printer for LATEX }	 \\
+	\texttt{enumitem} 	& \textit{Customize lists} \\
+	\texttt{morefloats} & \textit{Increase the number of simultaneous LATEX floats. Opción: maxfloats=25.} \\
+	\texttt{url} 		& \textit{Verbatim with URL-sensitive line breaks. Opción: hyphens.} \\
+	\texttt{hyperref} 	& \textit{Extensive support for hypertext in LATEX. Opción: breaklinks=true.} \\
+	\texttt{titlesec} 	& \textit{Modify title format.} \\
+	\texttt{appendix}   & \textit{Modifying the typesetting of appendix titles.} \\
+	\texttt{vmargin} 	& \textit{Margins and paper sizes.} \\
+	\texttt{fancyhdr} 	& \textit{Page layout.}\\
+	\texttt{caption} 	& \textit{The caption package provides many ways to customise the captions infloating environments such figure and table.}\\
+	\texttt{natbib} 	& \textit{package that implements both author-year and numbered references.}
+
 \end{longtable} 
 
 
@@ -122,19 +129,30 @@ A continuación se presenta algunos ejemplos de opciones que pueden usarse en el
 
 \subsection{Figuras}
 
-Para las figuras emplee el entorno ``figure'' según el ejemplo mostrado para la Fig. \ref{fig:utplcruz}. Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la figura en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la figura respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaboración'', respectivamente. Los demás comandos son los habituales. 
+Para las figuras emplee el entorno ``figure'' según el ejemplo mostrado en la Fig. \ref{fig:utplcruz}. Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la figura en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la figura respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaborado por'', respectivamente. Los demás comandos son los habituales. 
 
-Para referirse a una figura en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. 
+Para referirse a una figura en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. También se puede emplear el comando \lstinline|\autoref{}|, por ejemplo: \autoref{fig:utplcruz}. La diferencia radica en que al emplear  \autoref{fig:utplcruz} el comando agrega la palabra reservada según el tipo de entorno que se utilice, en este caso, ``Figura''. Cuando emplea \lstinline|\ref{}| usted debe agregar la palabra ``Figura'' por teclado. 
 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{width=0.7\textwidth}
 	\includegraphics[width=0.7\linewidth]{FIGURES/UTPL_cruz}
-	\caption{Campus UTPL \vspace{-5pt}}
+	\caption{Campus UTPL}
 	\FigExtraCaptionUTPL 			% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}
 		{\cite{utpl2008campus}}		% Fuente
 		{UTPL}			% Elaboración
 	\label{fig:utplcruz}
+\end{figure}
+
+\begin{figure}[h!]
+	\centering
+	\captionsetup{width=0.9\textwidth}
+	\includegraphics[width=0.9\linewidth]{FIGURES/UTPL_MuralPi}
+	\caption{Mural del número $ \pi $ en el Campus de la UTPL: Mosaico de 1800 cifras decimales diseñado por Hno. Ticiano García (1974).}
+	\FigExtraCaptionUTPL 			% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}
+	{Autor}		% Fuente
+	{Autor}      % Elaboración
+	\label{fig:utplcruz2}
 \end{figure}
 
 Además, recuerde que está incluido en la plantilla el paquete \texttt{subfigure} que le permite incluir sub-figuras en el texto. 
@@ -142,11 +160,11 @@ Además, recuerde que está incluido en la plantilla el paquete \texttt{subfigur
 \subsection{Tablas}
 Para la elaboración de tablas se recomienda usar el entorno ``table''. De acuerdo al ejemplo presentado (ver Tabla \ref{tb:Ejemplo}). Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la tabla en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la tabla respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaboración'', respectivamente. Los demás comandos son los habituales. 
 
-Para referirse a una tabla en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. 
+Para referirse a una tabla en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. También se puede emplear el comando \lstinline|\autoref{}|, por ejemplo: \autoref{tb:Ejemplo}.
 
 \begin{table}[]
 	\centering
-	\captionsetup{width=0.42\textwidth}
+	\captionsetup{width=0.44\textwidth}
 	\caption{Ejemplo de tabla}
 	\label{tb:Ejemplo}
 	\begin{tabular}{|l|l|l|}
@@ -156,15 +174,48 @@ Para referirse a una tabla en el texto emplee el comando \lstinline|\ref{}| incl
 		ítem 4             & ítem 5             & ítem 6             \\ \hline
 		ítem 7             & ítem 8             & ítem 9             \\ \hline
 	\end{tabular}
+	\vspace{3pt}
 	\FigExtraCaptionUTPL		% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
 		{Autor}					% Fuente
 		{Autor} 				% Elaboración			
 \end{table}
 
-Además, recuerde que se encuenra incluido en la plantilla el paquete \texttt{longtable} que le permite incluir tablas de más de una página en el texto. 
+En el caso de tener en su texto tablas extensas de más de una página, puede emplear el entorno \lstinline|longtable| cuyo paquete ya se encuentra adicionado al formato. Sin embargo, debe emplear \lstinline|\FigExtraCaptionUTPLLongtable{}{}| para agregar la fuente y la elaboración. En la \autoref{tb:TablaLarga} se presenta un ejemplo. 
+
+\begin{longtable}{|c|c|c|c|}
+	\captionsetup{width=0.9\textwidth}
+	\caption{Un ejemplo simple de tabla larga} 	
+	\label{tb:TablaLarga}\\
+	\hline
+	\textbf{Primera columna} & \textbf{Segunda columna} & \textbf{Tercera columna} & \textbf{Cuarta columna} \\
+	\hline
+	\endfirsthead
+%	\multicolumn{4}{c}%
+	\caption*{\tablename{} \thetable: (continuación)} \\
+
+	\hline
+	\textbf{Primera columna} & \textbf{Segunda columna} & \textbf{Tercera columna} & \textbf{Cuarta columna} \\
+	\hline
+	\endhead
+%		\hline
+	\endlastfoot
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
+	\hline
+	\FigExtraCaptionUTPLLongtable % \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
+		{Autor}					% Fuente
+		{Autor} 				% Elaboración	
+\end{longtable}
+
 
 \subsection{Ecuaciones}
-Para las ecuaciones numeradas emplee el entorno ``equation'' (ver \eqref{eq:Ecuacion_Shannon-Hartley}). Las ecuaciones se numeran por capítulo.  
+Para las ecuaciones numeradas emplee el entorno ``equation'' (ver \eqref{eq:Ecuacion_Shannon-Hartley}). Las ecuaciones se numeran por capítulo. Emplee  \lstinline|\eqref{}| para referirse a una ecuación particular.  
 
 \begin{equation}\label{eq:Ecuacion_Shannon-Hartley}
 C = B \log_{2} \left( 1 + \frac{S}{N} \right) 

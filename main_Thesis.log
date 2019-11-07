@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  10 OCT 2019 18:27
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  7 NOV 2019 17:26
 entering extended mode
 **./main_Thesis.tex
 (main_Thesis.tex
@@ -38,6 +38,9 @@ Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
 File: t1enc.def 2017/04/05 v2.0i Standard LaTeX file
 LaTeX Font Info:    Redeclaring font encoding T1 on input line 48.
 ))
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\setspace\setspace.sty"
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\babel\babel.sty"
 Package: babel 2018/11/13 3.27 The Babel package
 
@@ -440,7 +443,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 187.
+Package hyperref Info: Option `colorlinks' set `true' on input line 197.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -453,6 +456,12 @@ Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
 \titlewidth=\dimen145
 \titlewidthlast=\dimen146
 \titlewidthfirst=\dimen147
+)
+("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\appendix\appendix.sty"
+Package: appendix 2009/09/02 v1.2b extra appendix facilities
+\c@@pps=\count138
+\c@@ppsavesec=\count139
+\c@@ppsaveapp=\count140
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\vmargin\vmargin.sty"
 Package: vmargin 2004/07/15 V2.5 set document margins (VK)
@@ -487,8 +496,8 @@ Package caption3 Info: TeX engine: e-TeX on input line 64.
 \caption@parindent=\dimen155
 \caption@hangindent=\dimen156
 )
-\c@caption@flags=\count138
-\c@ContinuedFloat=\count139
+\c@caption@flags=\count141
+\c@ContinuedFloat=\count142
 Package caption Info: hyperref package is loaded.
 Package caption Info: listings package is loaded.
 Package caption Info: longtable package is loaded.
@@ -503,7 +512,7 @@ Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip74
 \bibsep=\skip75
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count140
+\c@NAT@ctr=\count143
 ))
 (DOCUMENTS/0_PREAMBULO.tex
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\blindtext\blindtext.sty"
@@ -512,24 +521,24 @@ Package: blindtext 2012/01/06 V2.0 blindtext-Package
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\tools\xspace.sty"
 Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
 )
-\c@blindtext=\count141
-\c@Blindtext=\count142
-\c@blind@countparstart=\count143
-\blind@countxx=\count144
-\blindtext@numBlindtext=\count145
-\blind@countyy=\count146
-\c@blindlist=\count147
-\c@blindlistlevel=\count148
-\c@blindlist@level=\count149
-\blind@listitem=\count150
-\c@blind@listcount=\count151
-\c@blind@levelcount=\count152
-\blind@mathformula=\count153
-\blind@Mathformula=\count154
-\c@blind@randomcount=\count155
-\c@blind@randommax=\count156
-\c@blind@pangramcount=\count157
-\c@blind@pangrammax=\count158
+\c@blindtext=\count144
+\c@Blindtext=\count145
+\c@blind@countparstart=\count146
+\blind@countxx=\count147
+\blindtext@numBlindtext=\count148
+\blind@countyy=\count149
+\c@blindlist=\count150
+\c@blindlistlevel=\count151
+\c@blindlist@level=\count152
+\blind@listitem=\count153
+\c@blind@listcount=\count154
+\c@blind@levelcount=\count155
+\blind@mathformula=\count156
+\blind@Mathformula=\count157
+\c@blind@randomcount=\count158
+\c@blind@randommax=\count159
+\c@blind@pangramcount=\count160
+\c@blind@pangrammax=\count161
 )
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\listings\lstlang1.sty"
 File: lstlang1.sty 2018/09/02 1.7 listings language file
@@ -571,40 +580,40 @@ LaTeX Info: Redefining \% on input line 24.
 )
 \openout1 = `main_Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Try loading font information for T1+phv on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 87.
+LaTeX Font Info:    ... okay on input line 87.
+LaTeX Font Info:    Try loading font information for T1+phv on input line 87.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1phv.fd"
 File: t1phv.fd 2001/06/04 scalable font definitions for T1/phv.
 )
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 10.40245pt on input line 85.
-LaTeX Info: Redefining \. on input line 85.
-LaTeX Info: Redefining \% on input line 85.
+(Font)              scaled to size 10.40245pt on input line 87.
+LaTeX Info: Redefining \. on input line 87.
+LaTeX Info: Redefining \% on input line 87.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count159
+\scratchcounter=\count162
 \scratchdimen=\dimen157
 \scratchbox=\box38
-\nofMPsegments=\count160
-\nofMParguments=\count161
+\nofMPsegments=\count163
+\nofMParguments=\count164
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count162
+\MPscratchCnt=\count165
 \MPscratchDim=\dimen158
-\MPnumerator=\count163
-\makeMPintoPDFobject=\count164
+\MPnumerator=\count166
+\makeMPintoPDFobject=\count167
 \everyMPtoPDFconversion=\toks30
 ) ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\oberdiek\epstopdf-base.sty"
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
@@ -619,9 +628,9 @@ Package grfext Info: Graphics extension search list:
 G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
-\c@lstlisting=\count165
+\c@lstlisting=\count168
 \AtBeginShipoutBox=\box39
-Package hyperref Info: Link coloring ON on input line 85.
+Package hyperref Info: Link coloring ON on input line 87.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\hyperref\nameref.sty"
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -629,11 +638,11 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\generic\oberdiek\gettitlestring.sty"
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count166
+\c@section@level=\count169
 )
-LaTeX Info: Redefining \ref on input line 85.
-LaTeX Info: Redefining \pageref on input line 85.
-LaTeX Info: Redefining \nameref on input line 85.
+LaTeX Info: Redefining \ref on input line 87.
+LaTeX Info: Redefining \pageref on input line 87.
+LaTeX Info: Redefining \nameref on input line 87.
 
 (main_Thesis.out) (main_Thesis.out)
 \@outlinefile=\write3
@@ -647,7 +656,7 @@ LaTeX Font Info:    Try loading font information for T1+ptm on input line 11.
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\psnfss\t1ptm.fd"
 File: t1ptm.fd 2001/06/04 font definitions for T1/ptm.
 )
-<FIGURES/utpl_escudo_color.pdf, id=158, 46.12022pt x 74.7088pt>
+<FIGURES/utpl_escudo_color.pdf, id=154, 46.12022pt x 74.7088pt>
 File: FIGURES/utpl_escudo_color.pdf Graphic file (type pdf)
 <use FIGURES/utpl_escudo_color.pdf>
 Package pdftex.def Info: FIGURES/utpl_escudo_color.pdf  used on input line 11.
@@ -832,85 +841,100 @@ Package blindtext Warning: spanish not defined, using English instead.
 [7])
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 [8]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 100.
+(blindtext)                 on input line 102.
 
 (DOCUMENTS/3_CAPITULO_1.tex [9]
 Cap\'{\i }tulo 1.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 13.67995pt on input line 11.
+(Font)              scaled to size 13.67995pt on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
-(Font)              Font shape `T1/phv/b/n' tried instead on input line 11.
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 15.
 LaTeX Font Info:    Font shape `T1/phv/b/n' will be
-(Font)              scaled to size 13.67995pt on input line 11.
+(Font)              scaled to size 13.67995pt on input line 15.
 [10
 
 ]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 20.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 24.
  ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\t1cmtt.fd"
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-Overfull \hbox (0.53378pt too wide) in paragraph at lines 23--24
+Overfull \hbox (0.53378pt too wide) in paragraph at lines 27--28
 []\T1/phv/m/n/12 Descargar los do-cu-men-tos de la plan-ti-lla de [][]$https : 
 / / github . com / fasandovaln / ThesisUTPL$[][]. 
  []
 
 LaTeX Font Info:    Font shape `T1/cmtt/bx/n' in size <12> not available
-(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 25.
+(Font)              Font shape `T1/cmtt/m/n' tried instead on input line 29.
 LaTeX Font Info:    Font shape `T1/phv/m/n' will be
-(Font)              scaled to size 7.59998pt on input line 25.
+(Font)              scaled to size 7.59998pt on input line 29.
 [11
 
 ] [12] [13]
-Overfull \hbox (23.99998pt too wide) in alignment at lines 90--111
+Overfull \hbox (23.99998pt too wide) in alignment at lines 94--115
  [] [] 
  []
 
 
-Overfull \hbox (23.99998pt too wide) in alignment at lines 111--116
+Overfull \hbox (23.99998pt too wide) in alignment at lines 115--123
  [] [] 
  []
 
 [14]
-<FIGURES/UTPL_cruz.png, id=331, 803.0pt x 602.25pt>
+<FIGURES/UTPL_cruz.png, id=337, 803.0pt x 602.25pt>
 File: FIGURES/UTPL_cruz.png Graphic file (type png)
 <use FIGURES/UTPL_cruz.png>
-Package pdftex.def Info: FIGURES/UTPL_cruz.png  used on input line 132.
+Package pdftex.def Info: FIGURES/UTPL_cruz.png  used on input line 139.
 (pdftex.def)             Requested size: 319.1176pt x 239.34268pt.
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 9.49997pt on input line 143.
 
-Overfull \hbox (0.72993pt too wide) in paragraph at lines 143--144
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+<FIGURES/UTPL_MuralPi.jpg, id=340, 3321.40875pt x 1311.90125pt>
+File: FIGURES/UTPL_MuralPi.jpg Graphic file (type jpg)
+<use FIGURES/UTPL_MuralPi.jpg>
+Package pdftex.def Info: FIGURES/UTPL_MuralPi.jpg  used on input line 150.
+(pdftex.def)             Requested size: 410.29308pt x 162.0455pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+
+Overfull \hbox (0.72993pt too wide) in paragraph at lines 161--162
 \T1/phv/m/n/12 bla res-pec-to al an-cho de la pá-gi-na. Por otra par-te, el co-
 man-do [][][][][]
  []
 
-[15 <./FIGURES/UTPL_cruz.png>]
+[15]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 147.
+               Default added (so using `tbp') on input line 165.
 
-[16]) (DOCUMENTS/3_CAPITULO_2.tex [17]
+[16 <./FIGURES/UTPL_cruz.png> <./FIGURES/UTPL_MuralPi.jpg>] [17] [18])
+(DOCUMENTS/3_CAPITULO_2.tex [19]
 Cap\'{\i }tulo 2.
-[18
+[20
 
 ]
 
@@ -935,7 +959,7 @@ LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 12.
 
-[19
+[21
 
 ]
 
@@ -952,7 +976,7 @@ File: omsphv.fd
 )
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 12.
- [20]
+ [22]
 
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 12.
@@ -960,63 +984,63 @@ Package blindtext Warning: spanish not defined, using English instead.
 
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 12.
-
-[21]
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 13.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 13.
-
-[22]
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 13.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 13.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 13.
 
 [23]
 
 Package blindtext Warning: spanish not defined, using English instead.
 (blindtext)                 on input line 13.
 
-) [24] (DOCUMENTS/4_CONCLUSIONES.tex)
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
+(blindtext)                 on input line 13.
 
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
-
+[24]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
+(blindtext)                 on input line 13.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
+(blindtext)                 on input line 13.
 
-[25
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 13.
+
+[25]
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 13.
+
+) [26] (DOCUMENTS/4_CONCLUSIONES.tex)
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 131.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 131.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 131.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 131.
+
+[27
 
 ]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
+(blindtext)                 on input line 131.
 
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 129.
+(blindtext)                 on input line 131.
 
-[26] (DOCUMENTS/5_RECOMENDACIONES.tex) [27
+[28] (DOCUMENTS/5_RECOMENDACIONES.tex) [29
 
 ] (main_Thesis.bbl
 Underfull \hbox (badness 4995) in paragraph at lines 26--30
@@ -1024,43 +1048,50 @@ Underfull \hbox (badness 4995) in paragraph at lines 26--30
 hotos / utpl / 2423561295 / in / album -[]
  []
 
-) [28
+) (DOCUMENTS/6_ANEXO_1.tex [30
 
-] (DOCUMENTS/6_ANEXO_1.tex
-
-Package hyperref Warning: The anchor of a bookmark and its parent's must not
-(hyperref)                be the same. Added a new anchor on input line 13.
-
-)
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
-
-
-Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
-
-[29
+]
+Anexo A.
+[31
 
 ]
 
 Package blindtext Warning: spanish not defined, using English instead.
-(blindtext)                 on input line 150.
+(blindtext)                 on input line 20.
 
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 20.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 20.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 20.
+
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 20.
+
+[32
+
+]
+
+Package blindtext Warning: spanish not defined, using English instead.
+(blindtext)                 on input line 20.
+
+File: FIGURES/UTPL_cruz.png Graphic file (type png)
+<use FIGURES/UTPL_cruz.png>
+Package pdftex.def Info: FIGURES/UTPL_cruz.png  used on input line 26.
+(pdftex.def)             Requested size: 319.1176pt x 239.34268pt.
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+)
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 154.
-[30]
+ [33] [34]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 154.
  (main_Thesis.aux
 LaTeX Info: Redefining \. on input line 24.
@@ -1069,36 +1100,37 @@ LaTeX Info: Redefining \% on input line 24.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 154.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 154.
 Package rerunfilecheck Info: File `main_Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 63D9365ADD858260432A1D16A452777B;2657.
+(rerunfilecheck)             Checksum: D8A20607EE7B2F63E84585446367AFFF;2598.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 154.
  ) 
 Here is how much of TeX's memory you used:
- 13952 strings out of 492969
- 202654 string characters out of 3133186
- 536337 words of memory out of 3000000
- 17412 multiletter control sequences out of 15000+200000
- 58869 words of font info for 74 fonts, out of 3000000 for 9000
+ 14100 strings out of 492969
+ 205050 string characters out of 3133186
+ 542167 words of memory out of 3000000
+ 17543 multiletter control sequences out of 15000+200000
+ 61759 words of font info for 76 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,67p,745b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\fas
 andoval\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
 ><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
-C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:
-/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Pr
-ogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Progr
-am Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program F
-iles (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files
- (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (
-x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86
-)/MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX
- 2.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fo
-nts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type
-1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/t
-imes/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a
-.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_Thesis.pdf (39 pages, 1392163 bytes).
+C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
+/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
+rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Prog
+ram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Program
+ Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Fil
+es (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Program Files (
+x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x8
+6)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/
+MiKTeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2
+.9/fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
+s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
+urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/tim
+es/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.p
+fb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main_Thesis.pdf (43 pages, 3231019 bytes).
 PDF statistics:
- 572 PDF objects out of 1000 (max. 8388607)
- 124 named destinations out of 1000 (max. 500000)
- 323 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 608 PDF objects out of 1000 (max. 8388607)
+ 131 named destinations out of 1000 (max. 500000)
+ 320 words of extra memory for PDF output out of 10000 (max. 10000000)
 

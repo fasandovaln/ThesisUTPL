@@ -9,6 +9,13 @@
 %% 
 %% ===================================================================
 %%
+%% Version 1.1.0
+%% Date: 07/11/2019
+%% Changes: 
+%% - Modificación de espacio entre líneas en captions de figuras y tablas. 
+%% - Modificación de espacio horizontal en caption para Longtable
+%% - Modificación de presentación, enumeración y presentación en tabla de contenidos del apartado %%   de Anexos.
+%%
 %% Version 1.0.0
 %% Date: 10/10/2019
 %% Changes: 
@@ -120,6 +127,9 @@
 % fontenc - Standard package for selecting font encodings
 \RequirePackage[T1]{fontenc}
 
+% Spacing between lines
+\usepackage{setspace}
+%
 % babel - Simplified Spanish support for Babel (hyphenation)
 %\RequirePackage[spanglish]{babel}
 \RequirePackage[spanish]{babel}
@@ -189,6 +199,9 @@
 % titlesec - Modify title format
 \RequirePackage{titlesec}
 
+% Modifying the typesetting of appendix titles
+\RequirePackage[titletoc]{appendix}
+
 \setcounter{secnumdepth}{5} % seting level of numbering (default for "report" is 3). With ''-1'' you have non number also for chapters
 %\setcounter{tocdepth}{5} % if you want all the levels in your table of contents
 
@@ -207,8 +220,8 @@
 % caption - The caption package provides many ways to customise the captions in
 %           floating environments such figure and table
 \RequirePackage{caption}
-\captionsetup[figure]{font=small,labelfont=normalfont,justification=raggedright,singlelinecheck=false,font=singlespacing, position=below, skip=0pt}
-\captionsetup[table]{font=small,labelfont=normalfont,justification=raggedright,singlelinecheck=false,font=singlespacing, position=above}
+\captionsetup[figure]{font={normalfont,singlespacing},labelfont=normalfont,justification=raggedright,singlelinecheck=false, position=below, format=hang, skip=5pt}
+\captionsetup[table]{font={normalfont,singlespacing},labelfont=normalfont,justification=raggedright,singlelinecheck=false, position=above, format=hang, skip=3pt}
 %
 %%- Bibliografia y referencias -%%
 \ifthenelse{\equal{\EstiloBibliografia}{APA}}{%
@@ -643,6 +656,10 @@
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
 	\renewcommand{\tablename}{Tabla}
+	
+	\renewcommand{\appendixname}{Anexo}
+	\renewcommand{\appendixtocname}{Anexos}
+	\renewcommand{\appendixpagename}{Anexos}
 }
 %
 % ====================================================================
@@ -650,8 +667,20 @@
 % ====================================================================
 \newcommand{\FigExtraCaptionUTPL}[2]{
 	\caption*{
-		Fuente: #1 \\ \vspace{-5pt}
-		Elaboración: #2
+		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
+			Fuente: #1 \\ 
+			Elaborado por: #2
+		}
+	}
+}
+%
+% Caption extra UTPL for Longtable
+\newcommand{\FigExtraCaptionUTPLLongtable}[2]{
+	\caption*{
+		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
+			\hspace{-3px}Fuente: #1 \\ 
+			Elaborado por: #2
+		}
 	}
 }
 %
