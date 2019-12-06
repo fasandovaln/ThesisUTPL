@@ -228,10 +228,12 @@ La plantilla permite utilizar dos estilos para citar, a saber: APA e IEEE. Puede
 
 Puede agregar más de un archivo de bibliografía. Como ejemplo la plantilla presenta el archivo ``\lstinline|BibliographyUTPL|'' el cual se encuentra en la carpeta comprimida de la plantilla en el mismo nivel de carpetas que el archivo principal ``\lstinline|main_Thesis.tex|''. 
  
-En el caso de emplear el estilo APA, usted puede citar empleando el comando estandar de Latex ``\lstinline|\cite{}|'' o \lstinline|\citet{}| si lo que desea es realizar una cita en donde se enfatiza al autor. Si desea realizar una cita en donde se enfatiza el texto, en cuyo caso la cita debe salir entre paréntesis, emplee el comando ``\lstinline|\citep{}|''. Note que para citas enfatizando el texto lo correcto es emplear el comando ``\lstinline|\citep{}|'' y no es igual que poner entre paréntesis el comando ``\lstinline|\cite{}|''. 
+En el caso de emplear el estilo APA, usted puede citar empleando el comando estandar de Latex ``\lstinline|\cite{}|'' o \lstinline|\citet{}| si lo que desea es realizar una cita en donde se enfatiza al autor. Si desea realizar una cita en donde se enfatiza el texto, en cuyo caso la cita debe salir entre paréntesis, emplee el comando ``\lstinline|\citep{}|''. Note que para citas enfatizando el texto lo correcto es emplear el comando ``\lstinline|\citep{}|'' y no es igual que poner entre paréntesis el comando ``\lstinline|\cite{}|''. Además, cuando utilice el estilo APA, \textbf{recuerde siempre} agregar el campo ``\lstinline|year|'' en cada referencia agregada en el archivo ``\lstinline|.bib|'', ya que la ausencia del campo un una sola referencia, genera errores en la compilación de todas la bibliografía. 
 
 Por ejemplo, la siguiente es una cita empleando ``\lstinline|\cite{}|'': \cite{sandoval2017hybrid}. 
 
-En el caso de emplear el estilo IEEE, únicamente puede citar con ``\lstinline|\cite{}|''. 
+En el caso de emplear el estilo IEEE, \textbf{únicamente puede citar con} ``\lstinline|\cite{}|''. 
 
 En el archivo ``\lstinline|BibliographyUTPL|'' se presentan ejemplos de como ingresar diferentes fuentes bibliográficas, como por ejemplo: libros, artículos, tesis, etc. 
+
+Si usted desea cambiar entre un estilo u otro (IEEE o APA), es preferible que previo a realizar el cambio y compilar, borre los archivos auxiliares para evitar errores inesperados. 

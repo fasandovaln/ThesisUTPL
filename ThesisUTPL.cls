@@ -9,6 +9,14 @@
 %% 
 %% ===================================================================
 %%
+%%
+%% Version 1.2.0
+%% Date: 06/12/2019
+%% Changes: 
+%% - Exclusión del término ``Portada'' del índice de contenidos. 
+%% - Modificación del formato de los Anexos por sugerencia de biblioteca. 
+%% - Se agregó un punto al final de toda la numeración de secciones, subsecciones, etc.
+%%
 %% Version 1.1.0
 %% Date: 07/11/2019
 %% Changes: 
@@ -344,7 +352,7 @@
 \begin{titlepage}
 	
 	\setmarginsrb{30mm}{30mm}{30mm}{30mm}{0pt}{0mm}{0pt}{0mm}
-	\addcontentsline{toc}{chapter}{PORTADA} % Agregar contenido a la tabla de contenidos
+%	\addcontentsline{toc}{chapter}{PORTADA} % Agregar contenido a la tabla de contenidos
 	
 	\fontfamily{ptm}
 	\begin{center}	
@@ -397,6 +405,7 @@
 \newcommand{\paginaAprobacion}{%
 	\newpage
 	\phantomsection
+	\setcounter{page}{2}
 	\newcommand{\aprobacionTitleText}{\textbf{APROBACIÓN} \ifthenelse{\equal{\utpl@directorGenero}{m}}{\textbf{DEL DIRECTOR}}{\textbf{DE LA DIRECTORA}} \textbf{DEL TRABAJO DE TITULACIÓN}}
 	% Agregar contenido a la tabla de contenidos
 	\begin{center}
@@ -638,15 +647,15 @@
 		[\vfill\clearpage]										% after-code: code following the title body
 
 	\titleformat{\section}
-	{\normalfont\large\bfseries}{\thesection}{1em}{}
+	{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
 	\titleformat{\subsection}
-	{\normalfont\large\bfseries}{\thesubsection}{1em}{}
+	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
 	\titleformat{\subsubsection}
-	{\normalfont\large\bfseries\itshape}{\thesubsubsection}{1em}{}
+	{\normalfont\large\bfseries\itshape}{\thesubsubsection .}{0.5em}{}
 	\titleformat{\paragraph}[runin]
-	{\normalfont\large\itshape}{\theparagraph}{1em}{}
+	{\normalfont\large\itshape}{\theparagraph .}{0.5em}{}
 	\titleformat{\subparagraph}[runin]
-	{\normalfont\large\scshape}{\thesubparagraph}{1em}{}
+	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
 	
 	\titlespacing*{\chapter}{0pt}{50pt}{40pt}
 	\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
@@ -656,10 +665,52 @@
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
 	\renewcommand{\tablename}{Tabla}
+}
+%
+% ====================================================================
+% Chapters Format
+% ====================================================================
+%
+\newcommand{\AppendicesFormat}{%
+	
+	% Título de capítulo: Anexos
+	\newpage
+	\addcontentsline{toc}{chapter}{ANEXOS} % Agregar contenido a la tabla de contenidos
+	\begin{center}
+		\vspace*{\fill}
+			{\Large \textbf{ANEXOS}}
+		\vspace*{\fill}	
+	\end{center}
+	\newpage
+
+	\setcounter{secnumdepth}{5}
+	%	\renewcommand{\thechapter}{\Roman{chapter}}
+	
+	\titleformat{\chapter}										% comand: \part, chapter, \section, etc
+	{\normalfont\Large\bfseries}{\Large\MakeUppercase{\appendixname \hspace{1pt}  \thechapter .}}{0.5em}{}
+	
+	\titleformat{\section}
+	{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
+	\titleformat{\subsection}
+	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
+	\titleformat{\subsubsection}
+	{\normalfont\large\bfseries\itshape}{\thesubsubsection .}{0.5em}{}
+	\titleformat{\paragraph}[runin]
+	{\normalfont\large\itshape}{\theparagraph .}{0.5em}{}
+	\titleformat{\subparagraph}[runin]
+	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
+	
+	\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+	\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+	\titlespacing*{\subsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\subsubsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\paragraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
+	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
+	
+	\renewcommand{\tablename}{Tabla}
 	
 	\renewcommand{\appendixname}{Anexo}
-	\renewcommand{\appendixtocname}{Anexos}
-	\renewcommand{\appendixpagename}{Anexos}
+	%
 }
 %
 % ====================================================================
