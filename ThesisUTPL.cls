@@ -9,6 +9,11 @@
 %% 
 %% ===================================================================
 %%
+%% Version 1.2.1
+%% Date: 016/12/2019
+%% Changes:
+%% - Cambio de numeración de las primeras páginas a números romanos en ``minúsculas''
+%% - Eminiar la cursiva del título en las subsubsection y paragraph. 
 %%
 %% Version 1.2.0
 %% Date: 06/12/2019
@@ -140,7 +145,7 @@
 %
 % babel - Simplified Spanish support for Babel (hyphenation)
 %\RequirePackage[spanglish]{babel}
-\RequirePackage[spanish]{babel}
+\RequirePackage[spanish,english]{babel}
 
 % urw-arial – URW Arial font pack for use with LATEX
 \RequirePackage[scaled]{helvet}
@@ -394,7 +399,7 @@
 		\utpl@ciudad \, - \, \utpl@pais \\
 		\utpl@ano	
 	\end{center}	
-	\pagenumbering{Roman}
+	\pagenumbering{roman}
 \end{titlepage}
 }%
 %
@@ -651,9 +656,9 @@
 	\titleformat{\subsection}
 	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
 	\titleformat{\subsubsection}
-	{\normalfont\large\bfseries\itshape}{\thesubsubsection .}{0.5em}{}
+	{\normalfont\large\bfseries}{\thesubsubsection .}{0.5em}{}
 	\titleformat{\paragraph}[runin]
-	{\normalfont\large\itshape}{\theparagraph .}{0.5em}{}
+	{\normalfont\large}{\theparagraph .}{0.5em}{}
 	\titleformat{\subparagraph}[runin]
 	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
 	
