@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  16 DEC 2019 10:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (MiKTeX 2.9.6880) (preloaded format=pdflatex 2018.12.5)  16 DEC 2019 12:07
 entering extended mode
 **./main_Thesis.tex
 (main_Thesis.tex
@@ -449,7 +449,7 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip62
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 205.
+Package hyperref Info: Option `colorlinks' set `true' on input line 211.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\titlesec\titlesec.sty"
 Package: titlesec 2016/03/21 v2.10.2 Sectioning titles
@@ -842,12 +842,31 @@ LaTeX Warning: No positions in optional float specifier.
 Chapter 2.
 [20
 
-] [21
-
-] [22] [23] [24]) [25] [26] (DOCUMENTS/4_CONCLUSIONES.tex) [27
+]
+LaTeX Font Info:    Font shape `T1/phv/bx/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/it' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/b/it' in size <12> not available
+(Font)              Font shape `T1/phv/b/sl' tried instead on input line 12.
+LaTeX Font Info:    Font shape `T1/phv/b/sl' will be
+(Font)              scaled to size 11.39996pt on input line 12.
+ [21
 
 ]
-[28] (DOCUMENTS/5_RECOMENDACIONES.tex) [29
+! Undefined control sequence.
+<argument> \normalfont \largek 
+                               
+l.12 \blinddocument
+                   
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[22] [23] [24]) [25] [26] (DOCUMENTS/4_CONCLUSIONES.tex) [27
+
+] [28]
+(DOCUMENTS/5_RECOMENDACIONES.tex) [29
 
 ] (main_Thesis.bbl
 Underfull \hbox (badness 4995) in paragraph at lines 26--30
@@ -886,16 +905,16 @@ Package rerunfilecheck Info: File `main_Thesis.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 161.
  ) 
 Here is how much of TeX's memory you used:
- 14078 strings out of 492969
- 205310 string characters out of 3133186
- 543312 words of memory out of 3000000
- 17511 multiletter control sequences out of 15000+200000
- 57749 words of font info for 73 fonts, out of 3000000 for 9000
+ 14083 strings out of 492969
+ 205359 string characters out of 3133186
+ 543326 words of memory out of 3000000
+ 17514 multiletter control sequences out of 15000+200000
+ 60605 words of font info for 75 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,12n,67p,902b,2282s stack positions out of 5000i,500n,10000p,200000b,50000s
- <C:\Users\fasandoval\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dp
-i600\ectt1200.pk>{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc
-}<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+{C:/Program Files (x86)/MiKTeX 2.9/fonts/enc/dvips/base/8r.enc} <C:\Users\fas
+andoval\AppData\Local\MiKTeX\2.9\fonts\pk\ljfour\jknappen\ec\dpi600\ectt1200.pk
+><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmex10.pfb><
 C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:
 /Program Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/P
 rogram Files (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Prog
@@ -906,13 +925,14 @@ les (x86)/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Program Files
 )/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Program Files (x86)/
 MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Program Files (x86)/MiK
 TeX 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/
-fonts/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/ty
-pe1/urw/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
-/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr
-8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main_Thesis.pdf (46 pages, 3272020 bytes).
+fonts/type1/urw/helvetic/uhvbo8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/t
+ype1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw
+/helvetic/uhvro8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/
+utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
+<C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main_Thesis.pdf (46 pages, 3281773 bytes).
 PDF statistics:
- 632 PDF objects out of 1000 (max. 8388607)
+ 636 PDF objects out of 1000 (max. 8388607)
  137 named destinations out of 1000 (max. 500000)
  336 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -14,6 +14,7 @@
 %% Changes:
 %% - Cambio de numeración de las primeras páginas a números romanos en ``minúsculas''
 %% - Eminiar la cursiva del título en las subsubsection y paragraph. 
+%% - Correción de etiqueta ``Figura'' en anexos
 %%
 %% Version 1.2.0
 %% Date: 06/12/2019
@@ -656,9 +657,9 @@
 	\titleformat{\subsection}
 	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
 	\titleformat{\subsubsection}
-	{\normalfont\large\bfseries}{\thesubsubsection .}{0.5em}{}
+	{\normalfont\large\bfseries}{\thesubsubsection .}{0.5em}{\itshape}
 	\titleformat{\paragraph}[runin]
-	{\normalfont\large}{\theparagraph .}{0.5em}{}
+	{\normalfont\largek}{\theparagraph .}{0.5em}{\itshape}
 	\titleformat{\subparagraph}[runin]
 	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
 	
@@ -712,8 +713,8 @@
 	\titlespacing*{\paragraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
+	\renewcommand{\figurename}{Figura}
 	\renewcommand{\tablename}{Tabla}
-	
 	\renewcommand{\appendixname}{Anexo}
 	%
 }
