@@ -1,21 +1,21 @@
-\babel@toc {english}{}
-\contentsline {chapter}{APROBACI\IeC {\'O}N DEL DIRECTOR DEL TRABAJO DE TITULACI\IeC {\'O}N}{ii}{section*.1}
-\contentsline {chapter}{DECLARACI\IeC {\'O}N DE AUTOR\IeC {\'I}A Y CESI\IeC {\'O}N DE DERECHOS}{iii}{section*.2}
-\contentsline {chapter}{DEDICATORIA}{iv}{section*.3}
-\contentsline {chapter}{AGRADECIMIENTO}{v}{section*.4}
-\contentsline {chapter}{\IeC {\'I}NDICE DE CONTENIDOS}{vii}{chapter*.5}
-\contentsline {chapter}{LISTA DE FIGURAS}{viii}{chapter*.6}
-\contentsline {chapter}{LISTA DE TABLAS}{ix}{chapter*.7}
+\babel@toc {spanish}{}
+\contentsline {chapter}{APROBACI\IeC {\'O}N DEL DIRECTOR DEL TRABAJO DE TITULACI\IeC {\'O}N}{\es@scroman {ii}}{section*.1}
+\contentsline {chapter}{DECLARACI\IeC {\'O}N DE AUTOR\IeC {\'I}A Y CESI\IeC {\'O}N DE DERECHOS}{\es@scroman {iii}}{section*.2}
+\contentsline {chapter}{DEDICATORIA}{\es@scroman {iv}}{section*.3}
+\contentsline {chapter}{AGRADECIMIENTO}{\es@scroman {v}}{section*.4}
+\contentsline {chapter}{\IeC {\'I}NDICE DE CONTENIDOS}{\es@scroman {vii}}{chapter*.5}
+\contentsline {chapter}{LISTA DE FIGURAS}{\es@scroman {viii}}{chapter*.6}
+\contentsline {chapter}{LISTA DE TABLAS}{\es@scroman {ix}}{chapter*.7}
 \contentsline {chapter}{RESUMEN}{1}{section*.8}
 \contentsline {chapter}{ABSTRACT}{2}{section*.9}
 \contentsline {chapter}{LISTA DE ABREVIATURAS}{3}{section*.10}
 \contentsline {chapter}{LISTA DE S\IeC {\'I}MBOLOS}{4}{section*.11}
 \contentsline {chapter}{INTRODUCCI\IeC {\'O}N}{5}{chapter*.12}
 \contentsline {section}{Section 1}{5}{Item.7}
-\contentsline {subsection}{Subsection 1}{6}{section*.13}
+\contentsline {subsection}{Subsection 1}{7}{section*.13}
 \contentsline {subsubsection}{Subsubsection 1}{7}{section*.13}
 \contentsline {paragraph}{paragraph 1}{7}{section*.13}
-\contentsline {subparagraph}{subparagraph 1}{7}{section*.13}
+\contentsline {subparagraph}{subparagraph 1}{8}{section*.13}
 \contentsline {section}{Section 2}{8}{section*.13}
 \contentsline {chapter}{\numberline {1}FORMATO DE LOS CAP\IeC {\'I}TULOS}{10}{chapter.1}
 \contentsline {section}{\numberline {1.1}Descripci\IeC {\'o}n de la plantilla}{11}{section.1.1}
@@ -28,14 +28,14 @@
 \contentsline {subsection}{\numberline {1.6.2}Tablas}{15}{subsection.1.6.2}
 \contentsline {subsection}{\numberline {1.6.3}Ecuaciones}{18}{subsection.1.6.3}
 \contentsline {subsection}{\numberline {1.6.4}Bibliograf\IeC {\'\i }a}{18}{subsection.1.6.4}
-\contentsline {chapter}{\numberline {2}Heading on Level\xspace 0 (chapter)}{20}{chapter.2}
-\contentsline {section}{\numberline {2.1}Heading on Level\xspace 1 (section)}{21}{section.2.1}
-\contentsline {subsection}{\numberline {2.1.1}Heading on Level\xspace 2 (subsection)}{21}{subsection.2.1.1}
-\contentsline {subsubsection}{\numberline {2.1.1.1}Heading on Level\xspace 3 (subsubsection)}{22}{subsubsection.2.1.1.1}
-\contentsline {paragraph}{\numberline {2.1.1.1.1}Heading on Level\xspace 4 (paragraph)}{22}{paragraph.2.1.1.1.1}
+\contentsline {chapter}{\numberline {2}Heading on level\xspace 0 (chapter)}{20}{chapter.2}
+\contentsline {section}{\numberline {2.1}Heading on level\xspace 1 (section)}{21}{section.2.1}
+\contentsline {subsection}{\numberline {2.1.1}Heading on level\xspace 2 (subsection)}{21}{subsection.2.1.1}
+\contentsline {subsubsection}{\numberline {2.1.1.1}Heading on level\xspace 3 (subsubsection)}{22}{subsubsection.2.1.1.1}
+\contentsline {paragraph}{\numberline {2.1.1.1.1}Heading on level\xspace 4 (paragraph)}{22}{paragraph.2.1.1.1.1}
 \contentsline {section}{\numberline {2.2}Lists}{22}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}Example for list\xspace (itemize)}{22}{subsection.2.2.1}
-\contentsline {subsubsection}{\numberline {2.2.1.1}Example for list\xspace (4*itemize)}{22}{subsubsection.2.2.1.1}
+\contentsline {subsubsection}{\numberline {2.2.1.1}Example for list\xspace (4*itemize)}{23}{subsubsection.2.2.1.1}
 \contentsline {subsection}{\numberline {2.2.2}Example for list\xspace (enumerate)}{23}{subsection.2.2.2}
 \contentsline {subsubsection}{\numberline {2.2.2.1}Example for list\xspace (4*enumerate)}{23}{subsubsection.2.2.2.1}
 \contentsline {subsection}{\numberline {2.2.3}Example for list\xspace (description)}{23}{subsection.2.2.3}
@@ -44,6 +44,6 @@
 \contentsline {chapter}{RECOMENDACIONES}{29}{chapter*.18}
 \contentsline {chapter}{BIBLIOGRAF\IeC {\'I}A}{30}{chapter*.19}
 \contentsline {chapter}{ANEXOS}{31}{chapter*.19}
-\contentsline {chapter}{Anexo \numberline {A}Acelerador de Part\IeC {\'\i }culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{32}{Anexo.1.A}
-\contentsline {chapter}{Anexo \numberline {B}Flashpoint: L\IeC {\'\i }neas de tiempo alternativas}{35}{Anexo.1.B}
-\contentsline {section}{\numberline {B.1}Flashpoint}{36}{section.1.B.1}
+\contentsline {chapter}{Anexo \numberline {A}Acelerador de Part\IeC {\'\i }culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{32}{Anexo.1.Alph1}
+\contentsline {chapter}{Anexo \numberline {B}Flashpoint: L\IeC {\'\i }neas de tiempo alternativas}{35}{Anexo.1.Alph2}
+\contentsline {section}{\numberline {B.1}Flashpoint}{36}{section.1.Alph2.1}

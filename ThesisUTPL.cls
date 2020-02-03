@@ -10,7 +10,7 @@
 %% ===================================================================
 %%
 %% Version 1.2.1
-%% Date: 016/12/2019
+%% Date: 16/12/2019
 %% Changes:
 %% - Cambio de numeración de las primeras páginas a números romanos en ``minúsculas''
 %% - Eminiar la cursiva del título en las subsubsection y paragraph. 
@@ -146,7 +146,7 @@
 %
 % babel - Simplified Spanish support for Babel (hyphenation)
 %\RequirePackage[spanglish]{babel}
-\RequirePackage[spanish,english]{babel}
+\RequirePackage[spanish]{babel}
 
 % urw-arial – URW Arial font pack for use with LATEX
 \RequirePackage[scaled]{helvet}
@@ -671,6 +671,7 @@
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
 	\renewcommand{\tablename}{Tabla}
+%	\renewcommand{\chaptername}{Capítulo}
 }
 %
 % ====================================================================
