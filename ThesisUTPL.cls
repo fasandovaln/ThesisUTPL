@@ -9,11 +9,19 @@
 %% 
 %% ===================================================================
 %%
+%% Version 1.2.2
+%% Date: 28/02/2020
+%% Changes:
+%% - Se agregó el paquete algorithm2e para la inclusión de algoritmos en la tesis. 
+%% - Se agregó la lista de algoritmos a la tabla de contenidos. 
+%% - Se agregó el paquete siunitx para facilitar la escritura correcta de acuerdo a la norma del SI. 
+%% - Se suprimió el cap 2 que era de relleno, únicamente para mostrar el formato. 
+%%
 %% Version 1.2.1
 %% Date: 16/12/2019
 %% Changes:
 %% - Cambio de numeración de las primeras páginas a números romanos en ``minúsculas''
-%% - Eminiar la cursiva del título en las subsubsection y paragraph. 
+%% - Eliminar la cursiva del título en las subsubsection y paragraph. 
 %% - Correción de etiqueta ``Figura'' en anexos
 %%
 %% Version 1.2.0
@@ -146,7 +154,7 @@
 %
 % babel - Simplified Spanish support for Babel (hyphenation)
 %\RequirePackage[spanglish]{babel}
-\RequirePackage[spanish]{babel}
+\RequirePackage[spanish,es-nodecimaldot]{babel}
 
 % urw-arial – URW Arial font pack for use with LATEX
 \RequirePackage[scaled]{helvet}
@@ -155,6 +163,9 @@
 
 % Soport math simbols-fonts.
 \RequirePackage{amsmath,amssymb,amsfonts,latexsym}
+
+% siunitx - A comprehensive (SI) units package
+\RequirePackage{siunitx}
 
 % graphicx - Enhanced support for graphics
 \RequirePackage{graphicx}
@@ -175,6 +186,11 @@
 
 % listings - source code printer for LATEX 	
 \RequirePackage{listings}
+
+% algorithm2e - package for algorithms
+\usepackage[ruled,vlined,lined,linesnumbered,algochapter,spanish]{algorithm2e}
+	% Extra vertical space before and after algorithm.
+\SetAlgoSkip{bigskip} 
 
 % enumitem - Customize lists
 \RequirePackage{enumitem}
@@ -550,6 +566,8 @@
 	\renewcommand{\contentsname}{ÍNDICE DE CONTENIDOS}%
 	\renewcommand{\listfigurename}{LISTA DE FIGURAS}%
 	\renewcommand{\listtablename}{LISTA DE TABLAS}%
+	\SetAlgorithmName{Algoritmo}{Algoritmo}{LISTA DE ALGORITMOS} 
+
 
 	\tableofcontents
 	\addcontentsline{toc}{chapter}{ÍNDICE DE CONTENIDOS} 
@@ -557,7 +575,11 @@
 	\addcontentsline{toc}{chapter}{LISTA DE FIGURAS} 
 	\listoftables
 	\addcontentsline{toc}{chapter}{LISTA DE TABLAS} 
+	\listofalgorithms
+	\addcontentsline{toc}{chapter}{LISTA DE ALGORITMOS} 
 }%
+
+
 %
 % ====================================================================
 % Página: Resumen
@@ -723,8 +745,8 @@
 % ====================================================================
 % Caption Extra UTPL: Inclusión de fuente y elaboración
 % ====================================================================
-\newcommand{\FigExtraCaptionUTPL}[2]{
-	\caption*{
+\newcommand{\FigExtraCaptionUTPL}[2]{%
+	\caption*{%
 		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
 			Fuente: #1 \\ 
 			Elaborado por: #2
@@ -732,13 +754,30 @@
 	}
 }
 %
-% Caption extra UTPL for Longtable
-\newcommand{\FigExtraCaptionUTPLLongtable}[2]{
-	\caption*{
+% Caption extra UTPL for Longtable (SE mantiene por compatibilidad)
+\newcommand{\FigExtraCaptionUTPLLongtable}[2]{%
+	\caption*{%
 		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
 			\hspace{-3px}Fuente: #1 \\ 
 			Elaborado por: #2
 		}
+	}
+}
+% Caption extra UTPL for Longtable
+\newcommand{\LgTbExtraCaptionUTPL}[2]{%
+	\caption*{%
+		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
+			\hspace{-3px}Fuente: #1 \\ 
+			Elaborado por: #2
+		}
+	}
+}
+%
+% Caption extra UTPL for Algorithm
+\newcommand{\AlgExtraCaptionUTPL}[2]{%
+	{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
+		Fuente: #1 \\[-6pt]
+		Elaborado por: #2 
 	}
 }
 %

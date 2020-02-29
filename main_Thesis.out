@@ -5,36 +5,32 @@
 \BOOKMARK [0][-]{chapter*.5}{\315NDICE DE CONTENIDOS}{}% 5
 \BOOKMARK [0][-]{chapter*.6}{LISTA DE FIGURAS}{}% 6
 \BOOKMARK [0][-]{chapter*.7}{LISTA DE TABLAS}{}% 7
-\BOOKMARK [0][-]{section*.8}{RESUMEN}{}% 8
-\BOOKMARK [0][-]{section*.9}{ABSTRACT}{}% 9
-\BOOKMARK [0][-]{section*.10}{LISTA DE ABREVIATURAS}{}% 10
-\BOOKMARK [0][-]{section*.11}{LISTA DE S\315MBOLOS}{}% 11
-\BOOKMARK [0][-]{chapter*.12}{INTRODUCCI\323N}{}% 12
-\BOOKMARK [1][-]{Item.7}{Section 1}{chapter*.12}% 13
-\BOOKMARK [2][-]{section*.13}{Subsection 1}{Item.7}% 14
-\BOOKMARK [1][-]{section*.13}{Section 2}{chapter*.12}% 15
-\BOOKMARK [0][-]{chapter.1}{FORMATO DE LOS CAP\315TULOS}{}% 16
-\BOOKMARK [1][-]{section.1.1}{Descripci\363n de la plantilla}{chapter.1}% 17
-\BOOKMARK [1][-]{section.1.2}{C\363mo iniciar la escritura de una tesis nueva con la plantilla}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.3}{Estructura del documento que se genera}{chapter.1}% 19
-\BOOKMARK [1][-]{section.1.4}{Clase de documento y opciones}{chapter.1}% 20
-\BOOKMARK [1][-]{section.1.5}{Paquetes empleados en la plantilla}{chapter.1}% 21
-\BOOKMARK [1][-]{section.1.6}{Particularidades de la plantilla}{chapter.1}% 22
-\BOOKMARK [2][-]{subsection.1.6.1}{Figuras}{section.1.6}% 23
-\BOOKMARK [2][-]{subsection.1.6.2}{Tablas}{section.1.6}% 24
-\BOOKMARK [2][-]{subsection.1.6.3}{Ecuaciones}{section.1.6}% 25
-\BOOKMARK [2][-]{subsection.1.6.4}{Bibliograf\355a}{section.1.6}% 26
-\BOOKMARK [0][-]{chapter.2}{Heading on level 0 \(chapter\)}{}% 27
-\BOOKMARK [1][-]{section.2.1}{Heading on level 1 \(section\)}{chapter.2}% 28
-\BOOKMARK [2][-]{subsection.2.1.1}{Heading on level 2 \(subsection\)}{section.2.1}% 29
-\BOOKMARK [1][-]{section.2.2}{Lists}{chapter.2}% 30
-\BOOKMARK [2][-]{subsection.2.2.1}{Example for list \(itemize\)}{section.2.2}% 31
-\BOOKMARK [2][-]{subsection.2.2.2}{Example for list \(enumerate\)}{section.2.2}% 32
-\BOOKMARK [2][-]{subsection.2.2.3}{Example for list \(description\)}{section.2.2}% 33
-\BOOKMARK [0][-]{chapter*.17}{CONCLUSIONES}{}% 34
-\BOOKMARK [0][-]{chapter*.18}{RECOMENDACIONES}{}% 35
-\BOOKMARK [0][-]{chapter*.19}{BIBLIOGRAF\315A}{}% 36
-\BOOKMARK [0][-]{chapter*.19}{ANEXOS}{}% 37
-\BOOKMARK [0][-]{Anexo.1.Alph1}{Anexo Acelerador de Part\355culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{}% 38
-\BOOKMARK [0][-]{Anexo.1.Alph2}{Anexo Flashpoint: L\355neas de tiempo alternativas}{}% 39
-\BOOKMARK [1][-]{section.1.Alph2.1}{Flashpoint}{Anexo.1.Alph2}% 40
+\BOOKMARK [0][-]{chapter*.8}{LISTA DE ALGORITMOS}{}% 8
+\BOOKMARK [0][-]{section*.9}{RESUMEN}{}% 9
+\BOOKMARK [0][-]{section*.10}{ABSTRACT}{}% 10
+\BOOKMARK [0][-]{section*.11}{LISTA DE ABREVIATURAS}{}% 11
+\BOOKMARK [0][-]{section*.12}{LISTA DE S\315MBOLOS}{}% 12
+\BOOKMARK [0][-]{chapter*.13}{INTRODUCCI\323N}{}% 13
+\BOOKMARK [1][-]{Item.7}{Section 1}{chapter*.13}% 14
+\BOOKMARK [2][-]{section*.14}{Subsection 1}{Item.7}% 15
+\BOOKMARK [1][-]{section*.14}{Section 2}{chapter*.13}% 16
+\BOOKMARK [0][-]{chapter.1}{FORMATO DE LOS CAP\315TULOS}{}% 17
+\BOOKMARK [1][-]{section.1.1}{Descripci\363n de la plantilla}{chapter.1}% 18
+\BOOKMARK [1][-]{section.1.2}{C\363mo iniciar la escritura de una tesis nueva con la plantilla}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.3}{Estructura del documento que se genera}{chapter.1}% 20
+\BOOKMARK [1][-]{section.1.4}{Clase de documento y opciones}{chapter.1}% 21
+\BOOKMARK [1][-]{section.1.5}{Paquetes empleados en la plantilla}{chapter.1}% 22
+\BOOKMARK [1][-]{section.1.6}{Particularidades de la plantilla}{chapter.1}% 23
+\BOOKMARK [2][-]{subsection.1.6.1}{Figuras}{section.1.6}% 24
+\BOOKMARK [2][-]{subsection.1.6.2}{Unidades del Sistema Internacional \(SI\)}{section.1.6}% 25
+\BOOKMARK [2][-]{subsection.1.6.3}{Tablas}{section.1.6}% 26
+\BOOKMARK [2][-]{subsection.1.6.4}{Ecuaciones}{section.1.6}% 27
+\BOOKMARK [2][-]{subsection.1.6.5}{Algoritmos}{section.1.6}% 28
+\BOOKMARK [2][-]{subsection.1.6.6}{Bibliograf\355a}{section.1.6}% 29
+\BOOKMARK [0][-]{chapter*.18}{CONCLUSIONES}{}% 30
+\BOOKMARK [0][-]{chapter*.19}{RECOMENDACIONES}{}% 31
+\BOOKMARK [0][-]{chapter*.20}{BIBLIOGRAF\315A}{}% 32
+\BOOKMARK [0][-]{chapter*.20}{ANEXOS}{}% 33
+\BOOKMARK [0][-]{Anexo.1.Alph1}{Anexo Acelerador de Part\355culas del Laboratorio S.T.A.R. y sus Impactos en la Fuerza de Velocidad}{}% 34
+\BOOKMARK [0][-]{Anexo.1.Alph2}{Anexo Flashpoint: L\355neas de tiempo alternativas}{}% 35
+\BOOKMARK [1][-]{section.1.Alph2.1}{Flashpoint}{Anexo.1.Alph2}% 36
