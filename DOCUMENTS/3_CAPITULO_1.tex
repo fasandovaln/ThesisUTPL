@@ -4,6 +4,9 @@
 % Creado por: Francisco Alberto Sandoval Noreña
 % e-mail: fasandoval@utpl.edu.ec
 % 
+% Version 1.2.2
+% Date: 28/02/2020
+%
 % Version 1.1.0
 % Date: 07/11/2019
 %
@@ -118,8 +121,8 @@ A continuación se presenta los paquetes empleados en la plantilla. Usted puede 
 	\texttt{vmargin} 	& \textit{Margins and paper sizes.} \\
 	\texttt{fancyhdr} 	& \textit{Page layout.}\\
 	\texttt{caption} 	& \textit{The caption package provides many ways to customise the captions infloating environments such figure and table.}\\
-	\texttt{natbib} 	& \textit{package that implements both author-year and numbered references.}
-
+	\texttt{natbib} 	& \textit{package that implements both author-year and numbered references.} \\
+	\texttt{algorithm2e}& \textit{Algorithm2e is an environment for writing algorithms in LATEX.}
 \end{longtable} 
 
 
@@ -156,6 +159,24 @@ Para referirse a una figura en el texto emplee el comando \lstinline|\ref{}| inc
 \end{figure}
 
 Además, recuerde que está incluido en la plantilla el paquete \texttt{subfigure} que le permite incluir sub-figuras en el texto. 
+
+
+\subsection{Unidades del Sistema Internacional (SI)}
+En la clase se encuentra cargado el paquete \lstinline|siunitx| y se sugiere su uso para escribir de forma eficiente e intuitiva las unidades  según la norma del Sistema Internacional (SI). 
+
+A continuación algunos ejemplos: 
+\lstinline|$ v = \SI{2.4}{\meter\per\second} $|, nos da como resultado: $ v = \SI{2.4}{\meter\per\second} $. 
+
+También puede emplear el modo \lstinline|[per-mode=symbol]|, por ejemplo:
+
+\lstinline| $ v = \SI[per-mode=symbol]{2.4}{\meter\per\second} $| para visualizar las unidades de la siguiente manera: $ v = \SI[per-mode=symbol]{2.4}{\meter\per\second} $. 
+
+Puede emplear los comandos \lstinline|\num{0.2e11}\si{ms^2}| (\num{0.2e11}\si{ms^2}) para números y unidades por separado. 
+
+Observe que se sugiere el uso del punto como separador decimal. Pero usted puede cambiar por coma si lo cree conveniente.
+
+La descripción completa del paquete la puede encontrar en la página de los autores. 
+
 
 \subsection{Tablas}
 Para la elaboración de tablas se recomienda usar el entorno ``table''. De acuerdo al ejemplo presentado (ver Tabla \ref{tb:Ejemplo}). Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la tabla en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la tabla respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaboración'', respectivamente. Los demás comandos son los habituales. 
@@ -208,7 +229,7 @@ En el caso de tener en su texto tablas extensas de más de una página, puede em
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	\hline
-	\FigExtraCaptionUTPLLongtable % \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
+	\LgTbExtraCaptionUTPL % \LgTbExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
 		{Autor}					% Fuente
 		{Autor} 				% Elaboración	
 \end{longtable}
@@ -220,6 +241,35 @@ Para las ecuaciones numeradas emplee el entorno ``equation'' (ver \eqref{eq:Ecua
 \begin{equation}\label{eq:Ecuacion_Shannon-Hartley}
 C = B \log_{2} \left( 1 + \frac{S}{N} \right) 
 \end{equation}
+
+\subsection{Algoritmos}
+
+Para agregar algoritmos en el texto usted puede hacer uso del paquete \lstinline|algorithm2e| el cual ya se encuentra adicionado en la clase. Como ejemplo se presenta el \autoref{alg:EjemploAlgoritmo}. 
+
+
+\begin{algorithm}[H]
+	\caption{Esquema A, otimização conjunta do $\mathbf{D}$ e $ \mathbf{v} $}
+	\label{alg:EjemploAlgoritmo}
+	
+	$ \lambda_{max} = 0 $\;
+	\For{$l = 1$ \KwTo $F$}{
+		determine a estimativa $ \hat{\mathbf{s}}[j] $ conforme a equação \;
+		determine a matriz \textit{toeplitz} $ \hat{\boldsymbol{\mathcal{S}}}[j] $ \;
+		determine o maior autovetor associado o maior autovalor de $ \hat{\mathbf{A}}_{_{l}}[j] $\;
+		$ \lambda_l \leftarrow $ maior autovalor de $ \hat{\mathbf{A}}_{_{l}}[j] $\;
+		$ \mathbf{v}_l \leftarrow $ autovetor associado a $ \lambda_l $\;
+		
+		\If{$ \lambda_l > \lambda_{max}$}{
+			$ \lambda_{max} = \lambda_l$\;
+			$ \mathbf{v}^* = \mathbf{v}_l$\;
+			$ \mathbf{l}^* = l $\;	
+		}
+	}
+\end{algorithm} 
+\AlgExtraCaptionUTPL % \AlgExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
+	{Autor}					% Fuente
+	{Autor} 				% Elaboración
+
 
 
 \subsection{Bibliografía}
