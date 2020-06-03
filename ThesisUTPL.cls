@@ -154,7 +154,7 @@
 %
 % babel - Simplified Spanish support for Babel (hyphenation)
 %\RequirePackage[spanglish]{babel}
-\RequirePackage[spanish,es-nodecimaldot]{babel}
+\RequirePackage[spanish,english,es-nodecimaldot]{babel}
 
 % urw-arial – URW Arial font pack for use with LATEX
 \RequirePackage[scaled]{helvet}
