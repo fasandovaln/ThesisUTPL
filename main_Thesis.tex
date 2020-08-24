@@ -5,6 +5,9 @@
 % e-mail: fasandoval@utpl.edu.ec
 % Homepage: https://sites.google.com/view/fasandovaln
 %
+% Version 2.0.0
+% Date: 20/08/2020
+%
 % Version 1.2.2
 % Date: 28/02/2020
 %
@@ -28,13 +31,7 @@
 %	Valor por defecto: ``unAutor''
 % 	Ej: \documentclass[tresAutores]{ThesisUTPL}
 %
-% 2. Estilo de Bibliografía
-%   Opciones posibles: ``APA'', ``IEEE''
-%   Valor por defecto: ``APA''
-%	Nota: Por favor revise las consideraciones en la compilación, dadas 
-% 	      en el documento de ejemplo, para el cambio entre opciones
-%
-% 3. Hiperenlaces: 
+% 2. Hiperenlaces: 
 %	Opción posible: ``hiperenlaces''
 %	Emplee la función si desea que se agregue hiperenlaces en el documento, 
 %   esto cubre el índice de contenidos, enlaces url, citas, y otros. 
@@ -42,8 +39,8 @@
 % ====================================================================
 %
 % Class: ThesisUTPL
-\documentclass[unAutor, APA, hiperenlaces]{ThesisUTPL}
-%
+\documentclass[unAutor, hiperenlaces]{ThesisUTPL}
+
 % Preambulo:
 % 	Paquetes adicionados por el usuario, comandos nuevos, etc. 
 \input{DOCUMENTS/0_PREAMBULO}
@@ -52,13 +49,13 @@
 % Información básica del documento
 % ====================================================================
 %
-% Datos del primer autor.
+%% Datos del primer autor.
 \autorNombresI{Francisco}										% Nombres del autor 1 del TT
 \autorApellidosI{Ramón}											% Apellidos del autor 1 del TT
 \autorCedulaI{0123456789}										% Cédula del autor del TT
 \autorGeneroI{m}												% Genero para la palabra: ``autor''. Opciones posibles: ``m'' (masculino), ``f'' (femenino)
 
-% Caso de múltiples autores
+%% Caso de múltiples autores
 %	Datos del segundo autor (optional)
 \autorNombresII{Harrison}										% Nombres del autor 1 del TT
 \autorApellidosII{Wells}										% Apellidos del autor 1 del TT
@@ -68,23 +65,42 @@
 \autorApellidosIII{Allen}										% Apellidos del autor 1 del TT
 \autorCedulaIII{2345678901}										% Cédula del autor del TT
 
-% Datos del Director(a) de la tesis
+%% Datos del Director(a) de la tesis
 \directorNombres{Joe}											% Nombres del Director del TT
 \directorApellidos{West}										% Apellidos del Director del TT
 \directorTitulo{Ingeniero}										% Titulo del Director del TT
 \directorTituloAbv{Ing.}										% Abreviación del título del director del TT
+\directorCedula{1234567890}										% Cédula del director del TT
 \directorGenero{m}												% Genero para la palabra: ``director''. Opciones posibles: ``m'' (masculino), ``f'' (femenino)
-%
-% Datos de la Tesis
+
+%% Datos del coordinador de la titulación
+\coordinadorNombres{Harrison}								    % Nombres del coordinador de la titulación
+\coordinadorApellidos{Wells}								    % Apellidos del coordinador de la titulación
+\coordinadorTitulo{Ingeniero}									% Titulo del coordinador de la titulación
+\coordinadorTituloAbv{Ing.}										% Abreviación del título del coordinador de la titulación
+\coordinadorGenero{m}											% Genero para la palabra: ``coordinador''.
+
+%% Datos de la Tesis
 \tema{Desequilibrios de la Fuerza de Velocidad}					% Título de la tesis (escrito en tipo oración)
 \titulacion{Maestría en Ciencias y Tecnologías de la Computación}					% Titulación
 \tituloObtenido{Maestría en Ciencias y Tecnologías de la Computación} 	% Título obtenido
 \area{Técnica}													% Área: Técnica, Administricativa, etc
 \ciudad{Loja}													% Ciudad de publicación de la tesis
 \pais{Ecuador}													% País de publicación de la tesis
-\mes{septiembre}												% mes de publicación de la tesis
-\ano{2019}														% año de publicación de la tesis
+\dia{28}														% día de publicación de la tesis
+\mes{julio}														% mes de publicación de la tesis
+\ano{2020}														% año de publicación de la tesis
+
+\ciudadOficioAprobacion{Loja}									% Ciudad para oficio de Aprobaión de director del TT
+	
+%% Ingresar contenidos del TT para la página ``Declaración de autoría y cesión de derechos''
+\contenidos{Introducción, Capítulo 1. Marco teórico, Capítulo 2. Metodología de la investigación, Capítulo 3. Descripción de simulación y métricas, Capítulo 4. Análisis de resultados, Conclusiones y Recomendaciones}									
 %
+%% Configuración
+\listOfAlgorithmsQ{Y}		% Requiere lista de algoritmos? Respuestas posibles ``Y'' (Yes), ``N'' (No) 
+%
+%% Archivos de referencias
+\addbibresource{BibliographyUTPL.bib}
 %
 % ====================================================================
 % Inicio del documento
@@ -101,7 +117,8 @@
 %%- Introducción-%% --------------------------------------------------
 % 		Se recomienda elaborar los archivos de texto en archivos independientes 
 %  		e incluirlos a través del comando input. 
-\begin{UnnumberedChapter}{INTRODUCCIÓN}
+\begin{UnnumberedChapter}{Introducción}
+	\label{ch:Introduccion}
 	%	
 	\input{DOCUMENTS/2_INTRODUCCION}
 	%
@@ -122,40 +139,39 @@
 %  y agregarlos al archivo principal a través del comando input)
 \input{DOCUMENTS/3_CAPITULO_1}
 %
+\chapter{Capítulo de prueba número 2}
+\Blindtext
+%
 % ====================================================================
 % Parte Final del documento
 % ====================================================================
 %
 %%- Conclusiones -%% -------------------------------------------------
-\begin{UnnumberedChapter}{CONCLUSIONES}
+\begin{UnnumberedChapter}{Conclusiones}
 	%
 	\input{DOCUMENTS/4_CONCLUSIONES}
 	%
 \end{UnnumberedChapter}
 %
 %%- Recomendaciones -%% ----------------------------------------------	
-\begin{UnnumberedChapter}{RECOMENDACIONES}
+\begin{UnnumberedChapter}{Recomendaciones}
 	%
 	\input{DOCUMENTS/5_RECOMENDACIONES}
 	%
 \end{UnnumberedChapter}
 %
 %%- Página: Bibliografía -%% -----------------------------------------
-\paginaBibliografia{
-	% Archivo de biliografia
-	\bibliography{BibliographyUTPL}
-}
+\paginaBibliografia
 %
 %%- Apéndice o anexos de la tesis -%% --------------------------------
 	% Los anexos son opcionales.
 %
-\AppendicesFormat
-%
-\begin{appendices}
-	%
-	\input{DOCUMENTS/6_ANEXO_1}
-	\input{DOCUMENTS/6_ANEXO_2}
-	%
-\end{appendices}
+\AppendicesFormat{%
+	% Introduzca en esta sección el apéndice 1
+	\input{DOCUMENTS/6_APENDICE_1}
+	}{
+	% Introduzca en esta sección el resto de apéndices
+	\input{DOCUMENTS/6_APENDICE_2}
+}
 %
 \end{document}

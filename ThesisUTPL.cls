@@ -9,6 +9,12 @@
 %% 
 %% ===================================================================
 %%
+%% Version 2.0.0
+%% Date: 20/08/2020
+%% Changes: 
+%% - Actualización completa del formato en relación a la actualización del formato para
+%%   tesis de la UTPL por parte de la bilioteca. 
+%%
 %% Version 1.2.2
 %% Date: 28/02/2020
 %% Changes:
@@ -122,13 +128,6 @@
 \DeclareOption{hiperenlaces}{%
 	\renewcommand{\Hiperenlaces}{on}
 }
-%
-% Estilo de la Bibliografía
-\newcommand{\EstiloBibliografia}{APA}
-%
-\DeclareOption{IEEE}{%
-	\renewcommand{\EstiloBibliografia}{IEEE}
-}
 
 \ProcessOptions\relax
 %
@@ -137,7 +136,7 @@
 % ====================================================================
 %
 % Based on Book class
-\LoadClass[a4paper,11pt, oneside]{book} 
+\LoadClass[a4paper, 11pt, oneside]{book} 
 %
 % ====================================================================
 % Paquetes requeridos
@@ -152,9 +151,8 @@
 % Spacing between lines
 \usepackage{setspace}
 %
-% babel - Simplified Spanish support for Babel (hyphenation)
-%\RequirePackage[spanglish]{babel}
-\RequirePackage[spanish,english,es-nodecimaldot]{babel}
+% babel - Simplified Spanish support for Babel (hyphenation) 
+\RequirePackage[spanish,es-nodecimaldot,es-tabla]{babel} 
 
 % urw-arial – URW Arial font pack for use with LATEX
 \RequirePackage[scaled]{helvet}
@@ -238,32 +236,38 @@
 % vmargin - Margins and paper sizes
 \RequirePackage{vmargin}
 
-% fancyhdr - Page layout 
+% fancyhdr - Page layout: Cambiar posición de número de página.
 \RequirePackage{fancyhdr}
 \pagestyle{fancy}
 
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
-\fancyhead{}
-\fancyfoot[C]{\thepage}
+\fancyhead{} % clear all header fields
+\fancyhead[R]{\thepage}
+\fancyfoot{} % clear all footer fields
+
+\fancypagestyle{plain}{%
+	\fancyhf{} % clear all header and footer fields
+	\fancyhead{} % clear all header fields
+	\fancyfoot{} % clear all footer fields
+	\fancyhead[R]{\thepage}
+	\renewcommand{\headrulewidth}{0pt}
+	\renewcommand{\footrulewidth}{0pt}
+}
 
 % caption - The caption package provides many ways to customise the captions in
 %           floating environments such figure and table
 \RequirePackage{caption}
-\captionsetup[figure]{font={normalfont,singlespacing},labelfont=normalfont,justification=raggedright,singlelinecheck=false, position=below, format=hang, skip=5pt}
-\captionsetup[table]{font={normalfont,singlespacing},labelfont=normalfont,justification=raggedright,singlelinecheck=false, position=above, format=hang, skip=3pt}
+\captionsetup[figure]{font={small,doublespacing},labelfont=bf,textfont=it,labelsep=newline,justification=raggedright,singlelinecheck=false, position=top, format=plain, skip=10pt}
+\captionsetup[table]{font={small,doublespacing},labelfont=bf,,textfont=it,labelsep=newline,justification=raggedright,singlelinecheck=false, position=top, format=plain, skip=10pt}
 %
 %%- Bibliografia y referencias -%%
-\ifthenelse{\equal{\EstiloBibliografia}{APA}}{%
-	%  natbib - pack­age that im­ple­ments both au­thor-year and num­bered ref­er­ences
-	\RequirePackage{natbib}
-}{}%
-%
-% Estilo de Bibliografia 
-	\ifthenelse{\equal{\EstiloBibliografia}{APA}}{%
-	\bibliographystyle{apalike}}
-	{\bibliographystyle{IEEEtran}}
+\RequirePackage{csquotes}
+\RequirePackage[style=apa, backend=biber, autocite=inline]{biblatex}
 % 
+% fmtcount - Printing numbers as words. 
+\RequirePackage{fmtcount}
+%
 % ====================================================================
 % Diseño de página 
 % ====================================================================
@@ -271,17 +275,17 @@
 %%- Tamaño de página -%%
 \setpapersize{A4}
 %%- Márgenes -%% 
-\setmarginsrb{3cm}		% margen izquierdo
-{3cm}					% margen superior
-{2cm}					% margen derecho	
-{2cm}					% margen inferior 
-{0pt}					% altura de encabezados 
-{0cm}					% espacio entre el texto y los encabezados
-{0pt}					% altura del pie de página
-{1.5cm}					% espacio entre el texto y pie de página
+\setmarginsrb{2.54cm}		% margen izquierdo
+{1.5cm}						% margen superior
+{2.54cm}					% margen derecho	
+{2.54cm}					% margen inferior 
+{12pt}						% altura de encabezados 
+{0.9cm}						% espacio entre el texto y los encabezados
+{0pt}						% altura del pie de página
+{11mm}						% espacio entre el texto y pie de página
 %
 %%- Interlineado del documento -%%
-\def\mystretch{1.5}
+\def\mystretch{2}
 \def\baselinestretch{\mystretch}
 %
 %%- Sangría de los párrafos del documento -%%
@@ -290,11 +294,14 @@
 %%- Espacio entre 2 párrafos -%%
 %\setlength{\parskip}{12pt} % 12pt 
 %
+\setlength\intextsep{20pt} 	% Moficar espacio antes de elementos flotantes (Figuras, Tablas, etc.)
 %
 % ====================================================================
 % Introducción de información básica
 % ====================================================================
 %
+
+% Datos del (los) autor(es)
 \newcommand{\utpl@autorNombresI}{}
 \newcommand{\autorNombresI}[1]{\renewcommand{\utpl@autorNombresI}{#1}}
 
@@ -325,6 +332,7 @@
 \newcommand{\utpl@autorGeneroI}{}
 \newcommand{\autorGeneroI}[1]{\renewcommand{\utpl@autorGeneroI}{#1}}
 
+% Datos del director de la tesis
 \newcommand{\utpl@directorNombres}{}
 \newcommand{\directorNombres}[1]{\renewcommand{\utpl@directorNombres}{#1}}
 
@@ -337,9 +345,29 @@
 \newcommand{\utpl@directorTituloAbv}{}
 \newcommand{\directorTituloAbv}[1]{\renewcommand{\utpl@directorTituloAbv}{#1}}
 
+\newcommand{\utpl@directorCedula}{}
+\newcommand{\directorCedula}[1]{\renewcommand{\utpl@directorCedula}{#1}}
+
 \newcommand{\utpl@directorGenero}{}
 \newcommand{\directorGenero}[1]{\renewcommand{\utpl@directorGenero}{#1}}
 
+% Datos del coordinador de la titulación
+\newcommand{\utpl@coordinadorNombres}{}
+\newcommand{\coordinadorNombres}[1]{\renewcommand{\utpl@coordinadorNombres}{#1}}
+
+\newcommand{\utpl@coordinadorApellidos}{}
+\newcommand{\coordinadorApellidos}[1]{\renewcommand{\utpl@coordinadorApellidos}{#1}}
+
+\newcommand{\utpl@coordinadorTitulo}{}
+\newcommand{\coordinadorTitulo}[1]{\renewcommand{\utpl@coordinadorTitulo}{#1}}
+
+\newcommand{\utpl@coordinadorTituloAbv}{}
+\newcommand{\coordinadorTituloAbv}[1]{\renewcommand{\utpl@coordinadorTituloAbv}{#1}}
+
+\newcommand{\utpl@coordinadorGenero}{}
+\newcommand{\coordinadorGenero}[1]{\renewcommand{\utpl@coordinadorGenero}{#1}}
+
+% Datos de la tesis
 \newcommand{\utpl@tema}{}
 \newcommand{\tema}[1]{\renewcommand{\utpl@tema}{#1}}
 
@@ -358,11 +386,23 @@
 \newcommand{\utpl@pais}{}
 \newcommand{\pais}[1]{\renewcommand{\utpl@pais}{\uppercase{#1}}}
 
+\newcommand{\utpl@dia}{}
+\newcommand{\dia}[1]{\renewcommand{\utpl@dia}{#1}}
+
 \newcommand{\utpl@mes}{}
 \newcommand{\mes}[1]{\renewcommand{\utpl@mes}{#1}}
 
 \newcommand{\utpl@ano}{}
 \newcommand{\ano}[1]{\renewcommand{\utpl@ano}{#1}}
+
+\newcommand{\utpl@ciudadOficioAprobacion}{}
+\newcommand{\ciudadOficioAprobacion}[1]{\renewcommand{\utpl@ciudadOficioAprobacion}{#1}}
+
+\newcommand{\utpl@contenidos}{}
+\newcommand{\contenidos}[1]{\renewcommand{\utpl@contenidos}{#1}}
+
+\newcommand{\utpl@listOfAlgorithmsQ}{}
+\newcommand{\listOfAlgorithmsQ}[1]{\renewcommand{\utpl@listOfAlgorithmsQ}{#1}}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
@@ -371,50 +411,49 @@
 % ====================================================================
 %
 \newcommand{\paginaCaratula}{%
+	\renewcommand{\baselinestretch}{1.5}
 \begin{titlepage}
 	
 	\setmarginsrb{30mm}{30mm}{30mm}{30mm}{0pt}{0mm}{0pt}{0mm}
-%	\addcontentsline{toc}{chapter}{PORTADA} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Carátula} % Agregar contenido a la tabla de contenidos
 	
-	\fontfamily{ptm}
 	\begin{center}	
-		\Large
+		\includegraphics[width=0.18\textwidth]{FIGURES/utpl_escudo_azul} \\
 		
-		\includegraphics[width=0.18\textwidth]{FIGURES/utpl_escudo_color} \\
-		
-		{\LARGE \textbf{UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA}} \\
+		\vspace{1cm}
+		{\fontsize{18}{23}\selectfont \textbf{UNIVERSIDAD TÉCNICA PARTICULAR DE LOJA}} \\
 		\vspace{-0.2cm}
-		\textit{La Universidad Católica de Loja} \\
+		{\fontsize{16}{20}\selectfont \fontfamily{ptm} \textit{La Universidad Católica de Loja}} \\
 		\vspace{1cm}
 		
-		{\LARGE \textbf{ÁREA \utpl@area}} \\
+		{\fontsize{18}{23}\selectfont \textbf{ÁREA \utpl@area}} \\
 		\vspace{1cm}
-		TÍTULO DE \utpl@tituloObtenido \\
-		\vspace{0.5cm}
-		\textbf{\utpl@tema} \\
+		{\fontsize{16}{20}\selectfont \textbf{\utpl@tituloObtenido}} \\
 		\vspace{0.5cm}
 		\begin{flushright}
-			TRABAJO DE TITULACIÓN. \textcolor{white}{\hspace{1cm}}  \\
+			TRABAJO DE TITULACIÓN \textcolor{white}{\hspace{0.5cm}}  \\
 		\end{flushright}
+		\vspace{0.5cm}
+		{\fontsize{16}{20}\selectfont \utpl@tema} \\
 		\vspace{0.5cm}
 		\begin{flushleft}
 			\ifthenelse{\equal{\CantAutores}{unAutor}}%
-				{\ifthenelse{\equal{\utpl@autorGeneroI}{m}}{\textbf{AUTOR:}}{\textbf{AUTORA:}}}%
-				{\textbf{AUTORES:}} %
+				{\ifthenelse{\equal{\utpl@autorGeneroI}{m}}{\fontsize{12}{14}\selectfont \textbf{Autor:}}{\fontsize{12}{14}\selectfont \textbf{Autora:}}}%
+				{\fontsize{12}{14}\selectfont \textbf{Autores:}} %
 			\ifthenelse{\equal{\CantAutores}{unAutor}}%
-				{\utpl@autorApellidosI, \utpl@autorNombresI \\}{}%
+				{\fontsize{12}{14}\selectfont \utpl@autorApellidosI, \utpl@autorNombresI \\}{}%
 			\ifthenelse{\equal{\CantAutores}{dosAutores}}%	
-				{\par \hspace{1cm} \utpl@autorApellidosI, \utpl@autorNombresI \\ \hspace{1cm} \utpl@autorApellidosII, \utpl@autorNombresII \\}{}%
+				{\par \fontsize{12}{14}\selectfont \hspace{1cm} \utpl@autorApellidosI, \utpl@autorNombresI \\ \hspace{1cm} \utpl@autorApellidosII, \utpl@autorNombresII \\}{}%
 			\ifthenelse{\equal{\CantAutores}{tresAutores}}%	
-				{\par \hspace{1cm} \utpl@autorApellidosI, \utpl@autorNombresI \\ %
+				{\par \fontsize{12}{14}\selectfont \hspace{1cm} \utpl@autorApellidosI, \utpl@autorNombresI \\ %
 					  \hspace{1cm} \utpl@autorApellidosII, \utpl@autorNombresII \\ %
 					  \hspace{1cm} \utpl@autorApellidosIII, \utpl@autorNombresIII \\}{}%
-			\ifthenelse{\equal{\utpl@directorGenero}{m}}{\textbf{DIRECTOR:}}{\textbf{DIRECTORA:}} \utpl@directorApellidos, \utpl@directorNombres, \utpl@directorTituloAbv \\
+			\ifthenelse{\equal{\utpl@directorGenero}{m}}{\fontsize{12}{14}\selectfont \textbf{Director:}}{\fontsize{12}{14}\selectfont \textbf{Directora:}} {\fontsize{12}{14}\selectfont \utpl@directorApellidos, \utpl@directorNombres, \utpl@directorTituloAbv} \\
 		\end{flushleft}
 		\vspace{1cm}
 		
-		\utpl@ciudad \, - \, \utpl@pais \\
-		\utpl@ano	
+		{\fontsize{12}{14}\selectfont \utpl@ciudad \, -\, \utpl@pais \\
+		\utpl@ano}	
 	\end{center}	
 	\pagenumbering{roman}
 \end{titlepage}
@@ -428,36 +467,44 @@
 	\newpage
 	\phantomsection
 	\setcounter{page}{2}
-	\newcommand{\aprobacionTitleText}{\textbf{APROBACIÓN} \ifthenelse{\equal{\utpl@directorGenero}{m}}{\textbf{DEL DIRECTOR}}{\textbf{DE LA DIRECTORA}} \textbf{DEL TRABAJO DE TITULACIÓN}}
+	\newcommand{\aprobacionTitleText}{\textbf{Aprobación} \ifthenelse{\equal{\utpl@directorGenero}{m}}{\textbf{del director}}{\textbf{de la directora}} \textbf{del Trabajo de Titulación}}
 	% Agregar contenido a la tabla de contenidos
 	\begin{center}
 		\aprobacionTitleText \\
 	\end{center}
 	\ifthenelse{\equal{\utpl@directorGenero}{m}}%
-		{\addcontentsline{toc}{chapter}{APROBACIÓN DEL DIRECTOR DEL TRABAJO DE TITULACIÓN}}%
-		{\addcontentsline{toc}{chapter}{APROBACIÓN DE LA DIRECTORA DEL TRABAJO DE TITULACIÓN}}% 
+		{\addcontentsline{toc}{chapter}{Aprobación del director del Trabajo de Titulación}}%
+		{\addcontentsline{toc}{chapter}{Aprobación de la directora del Trabajo de Titulación}}% 
 	\vspace{1cm}
 	
-	\large
-	\utpl@directorTitulo. \\
-	\utpl@directorNombres \, \utpl@directorApellidos. \\
-	\textbf{DOCENTE DE LA TITULACIÓN}
+	\utpl@ciudadOficioAprobacion, \utpl@dia \, de \utpl@mes \, de \utpl@ano \\
+	\par
+	\utpl@coordinadorTitulo. \\
+	\utpl@coordinadorNombres \, \utpl@coordinadorApellidos \\
+	\ifthenelse{\equal{\utpl@coordinadorGenero}{m}}{\textbf{Coordinador}}{ \textbf{Coordinadora}} \textbf{de Titulación}
+	
 	\par 
 	\vspace{1.5cm}
+	Ciudad.-
+	\par
 	De mi consideración: 
 	\par
 	\vspace{1.5cm}
-	El presente trabajo de titulación \textbf{``\utpl@tema''} \, realizado por %
+	El presente trabajo de titulación denominado: ``\utpl@tema'' realizado por %
 	\ifthenelse{\equal{\CantAutores}{unAutor}}{\utpl@autorApellidosI \, \utpl@autorNombresI}{}%
 	\ifthenelse{\equal{\CantAutores}{dosAutores}}{\utpl@autorApellidosI \, \utpl@autorNombresI \, y \utpl@autorApellidosII \, \utpl@autorNombresII}{}%
 	\ifthenelse{\equal{\CantAutores}{tresAutores}}{\utpl@autorApellidosI \, \utpl@autorNombresI, \utpl@autorApellidosII \, \utpl@autorNombresII \, y \utpl@autorApellidosIII \, \utpl@autorNombresIII}{}%
-	, ha sido orientado y revisado durante su ejecución, por cuanto se aprueba la presentación del mismo. \\
+	, ha sido orientado y revisado durante su ejecución, por cuanto se aprueba la presentación del mismo. Así mismo, doy fe que dicho Trabajo de Titulación ha sido revisado por la herramienta antiplagio institucional. \\
+	\par
+	
+	Particular que comunico para los fines pertinentes.
 	\par
 	\vspace{1cm}
-	Loja, \utpl@mes \, de \utpl@ano \\
+	Atentamente,	
 	\par
-	\vspace{1.5cm}
-	f\mbox{)} \, ......................................
+	\vspace{2cm}
+	\utpl@directorNombres \, \utpl@directorApellidos \\
+	C.I.: \utpl@directorCedula
 }%
 %
 % ====================================================================
@@ -467,63 +514,67 @@
 \newcommand{\paginaAutoria}{%
 	\newpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{DECLARACIÓN DE AUTORÍA Y CESIÓN DE DERECHOS} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Declaración de autoría y cesión de derechos} % Agregar contenido a la tabla de contenidos
 	\begin{center}
-		\textbf{DECLARACIÓN DE AUTORÍA Y CESIÓN DE DERECHOS} \\
-	\end{center}
-	\vspace{1.5cm}	
+		\textbf{Declaración de autoría y cesión de derechos} \\
+	\end{center}	
 	
 	\ifthenelse{\equal{\CantAutores}{unAutor}}{%
-		``Yo \textit{\utpl@autorApellidosI \, \utpl@autorNombresI} \, declaro ser \ifthenelse{\equal{\utpl@autorGeneroI}{m}}{autor}{autora} \, del presente trabajo de titulación: \textbf{\utpl@tema}, de la Titulación de \textit{\utpl@titulacion}, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos} \ \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y eximo expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones legales. Además certifico que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo, son de mi exclusiva responsabilidad. \\
-		%
-		Adicionalmente declaro conocer y aceptar la disposición del Art. 88 del Estatuto Orgánico de la Universidad Técnica Particular de Loja que en su parte pertinente textualmente dice: “Forman parte del patrimonio de la Universidad la propiedad intelectual de investigaciones, trabajos científicos o técnicos y tesis de grado o trabajos de titulación que se realicen con el apoyo financiero, académico o institucional (operativo) de la Universidad'' \\
-		\linebreak
-		\linebreak
-		f. ...................................... \\
-		Autor: \utpl@autorApellidosI \, \utpl@autorNombresI \\
-		Cédula: \utpl@autorCedulaI
+		``Yo \textit{\utpl@autorApellidosI \, \utpl@autorNombresI} declaro y acepto en forma expresa lo siguiente:
+		\begin{itemize}[label=$\bullet$]
+			\item Ser \ifthenelse{\equal{\utpl@autorGeneroI}{m}}{autor}{autora} \, del Trabajo de Titulación denominado: \utpl@tema, específicamente de los contenidos comprendidos en: \utpl@contenidos, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos}  \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y, en tal virtud, eximo expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones judiciales o administrativas, en relación a la propiedad intelectual. Además, ratifico que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo son de mi exclusiva responsabilidad.
+			
+			\item Que mi obra, producto de mis actividades académicas y de investigación, forma parte del patrimonio de la Universidad Técnica Particular de Loja, de conformidad con el artículo 20, literal j), de la Ley Orgánica de Educación Superior; y, artículo 91 del Estatuto Orgánico de la UTPL, que establece: ``Forman parte del patrimonio de la Universidad la propiedad intelectual de investigaciones, trabajos científicos o técnicos y tesis de grado que se realicen a través, o con el apoyo financiero, académico o institucional (operativo) de la Universidad''.  
+			
+			\item Autorizo a la Universidad Técnica Particular de Loja para que pueda hacer uso de mi obra con fines netamente académicos, ya sea de forma impresa, digital y/o electrónica o por cualquier medio conocido o por conocerse, sirviendo el presente instrumento como la fe de mi completo consentimiento; y, para que sea ingresada al Sistema Nacional de Información de la Educación Superior del Ecuador para su difusión pública, en cumplimiento del artículo 144 de la Ley Orgánica de Educación Superior.''    
+		\end{itemize}
+	
+		\vspace{0.5cm}
+		Firma: .............................................. \\
+		\ifthenelse{\equal{\utpl@autorGeneroI}{m}}{Autor}{Autora}: \utpl@autorNombresI \, \utpl@autorApellidosI  \\
+		C.I.: \utpl@autorCedulaI
 	}{%
-		``Nosotros %
-			\ifthenelse{\equal{\CantAutores}{dosAutores}}{\textit{\utpl@autorApellidosI \, \utpl@autorNombresI \, y \utpl@autorApellidosII \, \utpl@autorNombresII} \,}{}%
-			\ifthenelse{\equal{\CantAutores}{tresAutores}}{\utpl@autorApellidosI \, \utpl@autorNombresI, \, \utpl@autorApellidosII \, \utpl@autorNombresII \, y \utpl@autorApellidosIII \, \utpl@autorNombresIII \,}{}%
-		declaramos ser autores del presente trabajo de titulación: \textbf{\utpl@tema}, de la Titulación de \textit{\utpl@titulacion}, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos} \ \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y eximimos expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones legales. Además certificamos que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo, son de nuestra exclusiva responsabilidad. \\
-		%
-		Adicionalmente declaramos conocer y aceptar la disposición del Art. 88 del Estatuto Orgánico de la Universidad Técnica Particular de Loja que en su parte pertinente textualmente dice: “Forman parte del patrimonio de la Universidad la propiedad intelectual de investigaciones, trabajos científicos o técnicos y tesis de grado o trabajos de titulación que se realicen con el apoyo financiero, académico o institucional (operativo) de la Universidad'' \\
+		``Nosotros 
+		\ifthenelse{\equal{\CantAutores}{dosAutores}}{\textit{\utpl@autorApellidosI \, \utpl@autorNombresI \, y \utpl@autorApellidosII \, \utpl@autorNombresII} \,}{}%
+		\ifthenelse{\equal{\CantAutores}{tresAutores}}{\utpl@autorApellidosI \, \utpl@autorNombresI, \, \utpl@autorApellidosII \, \utpl@autorNombresII \, y \utpl@autorApellidosIII \, \utpl@autorNombresIII \,}{}%
+		 \, declaramos y aceptamos en forma expresa lo siguiente:
+		\begin{itemize}[label=$\bullet$]
+			\item Ser autores del Trabajo de Titulación denominado: \utpl@tema, específicamente de los contenidos comprendidos en: \utpl@contenidos, siendo \textit{\utpl@directorNombres \, \utpl@directorApellidos}  \ifthenelse{\equal{\utpl@directorGenero}{m}}{director}{directora} del presente trabajo; y, en tal virtud, eximimos expresamente a la Universidad Técnica Particular de Loja y a sus representantes legales de posibles reclamos o acciones judiciales o administrativas, en relación a la propiedad intelectual. Además, ratificamos que las ideas, conceptos, procedimientos y resultados vertidos en el presente trabajo investigativo son de nuestra exclusiva responsabilidad.
+			
+			\item Que nuestra obra, producto de nuestras actividades académicas y de investigación, forma parte del patrimonio de la Universidad Técnica Particular de Loja, de conformidad con el artículo 20, literal j), de la Ley Orgánica de Educación Superior; y, artículo 91 del Estatuto Orgánico de la UTPL, que establece: ``Forman parte del patrimonio de la Universidad la propiedad intelectual de investigaciones, trabajos científicos o técnicos y tesis de grado que se realicen a través, o con el apoyo financiero, académico o institucional (operativo) de la Universidad''.  
+			
+			\item Autorizamos a la Universidad Técnica Particular de Loja para que pueda hacer uso de nuestra obra con fines netamente académicos, ya sea de forma impresa, digital y/o electrónica o por cualquier medio conocido o por conocerse, sirviendo el presente instrumento como la fe de nuestro completo consentimiento; y, para que sea ingresada al Sistema Nacional de Información de la Educación Superior del Ecuador para su difusión pública, en cumplimiento del artículo 144 de la Ley Orgánica de Educación Superior.''    
+		\end{itemize}
+			
 		%
 		\ifthenelse{\equal{\CantAutores}{dosAutores}}{
-			\linebreak
-			\linebreak
-			f. ...................................... \\
-			Autor: \utpl@autorApellidosI \, \utpl@autorNombresI \\
-			Cédula: \utpl@autorCedulaI \\
-			%	
-			\linebreak
-			\linebreak
-			f. ...................................... \\
-			Autor: \utpl@autorApellidosII \, \utpl@autorNombresII \\
-			Cédula: \utpl@autorCedulaII \\
+			\vspace{0.5cm}
+			Firma: .............................................. \\
+			\ifthenelse{\equal{\utpl@autorGeneroI}{m}}{Autor}{Autora}: \utpl@autorNombresI \, \utpl@autorApellidosI  \\
+			C.I.: \utpl@autorCedulaI
+			
+			\vspace{0.5cm}
+			Firma: .............................................. \\
+			\ifthenelse{\equal{\utpl@autorGeneroII}{m}}{Autor}{Autora}: \utpl@autorNombresII \, \utpl@autorApellidosII  \\
+			C.I.: \utpl@autorCedulaII
 		}{}%
 		\ifthenelse{\equal{\CantAutores}{tresAutores}}{
-			\linebreak 
-			\linebreak
-			f. ...................................... \\
-			Autor: \utpl@autorApellidosI \, \utpl@autorNombresI \\
-			Cédula: \utpl@autorCedulaIII \\
-			%	
-			\linebreak
-			\linebreak
-			f. ...................................... \\
-			Autor: \utpl@autorApellidosII \, \utpl@autorNombresII \\
-			Cédula: \utpl@autorCedulaII \\
-			%	
-			\linebreak
-			\linebreak
-			f. ...................................... \\
-			Autor: \utpl@autorApellidosIII \, \utpl@autorNombresIII \\
-			Cédula: \utpl@autorCedulaIII 
+			\vspace{0.5cm}
+			Firma: .............................................. \\
+			\ifthenelse{\equal{\utpl@autorGeneroI}{m}}{Autor}{Autora}: \utpl@autorNombresI \, \utpl@autorApellidosI  \\
+			C.I.: \utpl@autorCedulaI
+			
+			\vspace{0.5cm}
+			Firma: .............................................. \\
+			\ifthenelse{\equal{\utpl@autorGeneroII}{m}}{Autor}{Autora}: \utpl@autorNombresII \, \utpl@autorApellidosII  \\
+			C.I.: \utpl@autorCedulaII
+			
+			\vspace{0.5cm}
+			Firma: .............................................. \\
+			\ifthenelse{\equal{\utpl@autorGeneroIII}{m}}{Autor}{Autora}: \utpl@autorNombresIII \, \utpl@autorApellidosIII  \\
+			C.I.: \utpl@autorCedulaIII
 		}{}%
-	}%
-		
+	}%	
 }%
 %
 % ====================================================================
@@ -533,9 +584,9 @@
 \newcommand{\paginaDedicatoria}[1]{%
 	\newpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{DEDICATORIA} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Dedicatoria} % Agregar contenido a la tabla de contenidos
 	\begin{center}
-		\textbf{DEDICATORIA} \\
+		\textbf{Dedicatoria} \\
 	\end{center}
 	#1	
 }%
@@ -547,9 +598,9 @@
 \newcommand{\paginaAgradecimiento}[1]{%
 	\newpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{AGRADECIMIENTO} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Agradecimiento} % Agregar contenido a la tabla de contenidos
 	\begin{center}
-		\textbf{AGRADECIMIENTO} \\
+		\textbf{Agradecimiento} \\
 	\end{center}
 	#1	
 }%
@@ -560,26 +611,45 @@
 %
 \newcommand{\paginaListas}{%
 
-	\titleformat{\chapter}[hang]{\large\filcenter\scshape\bfseries}{}{0pt}{}
+	\titleformat{\chapter}[hang]{\filcenter\bfseries}{}{0pt}{}
 	\titlespacing{\chapter}{0pt}{*0}{*1}
-	
-	\renewcommand{\contentsname}{ÍNDICE DE CONTENIDOS}%
-	\renewcommand{\listfigurename}{LISTA DE FIGURAS}%
-	\renewcommand{\listtablename}{LISTA DE TABLAS}%
-	\SetAlgorithmName{Algoritmo}{Algoritmo}{LISTA DE ALGORITMOS} 
+
+	\renewcommand{\contentsname}{Índice de Contenido}%
+	\renewcommand{\listfigurename}{Índice de Figuras}%
+	\renewcommand{\listtablename}{Índice de Tablas}%
+	\SetAlgorithmName{Algoritmo}{Algoritmo}{Índice de Algoritmos} 
 
 
 	\tableofcontents
-	\addcontentsline{toc}{chapter}{ÍNDICE DE CONTENIDOS} 
-	\listoffigures
-	\addcontentsline{toc}{chapter}{LISTA DE FIGURAS} 
-	\listoftables
-	\addcontentsline{toc}{chapter}{LISTA DE TABLAS} 
-	\listofalgorithms
-	\addcontentsline{toc}{chapter}{LISTA DE ALGORITMOS} 
+	
+	\addcontentsline{toc}{chapter}{Índice de Contenido}	
+	
+	{%  
+		\let\oldnumberline\numberline%  
+		\renewcommand{\numberline}{\tablename~\oldnumberline}%  
+		\listoftables%  
+	}
+	
+	\addcontentsline{toc}{chapter}{Índice de Tablas} 
+	
+	{%  
+		\let\oldnumberline\numberline%  
+		\renewcommand{\numberline}{\figurename~\oldnumberline}%  
+		\listoffigures%  
+	}
+
+	\addcontentsline{toc}{chapter}{Índice de Figuras}
+	
+	\ifthenelse{\equal{\utpl@listOfAlgorithmsQ}{Y}}{
+		\begingroup
+			\let\oldnumberline\numberline
+			\renewcommand{\numberline}{Algoritmo~\oldnumberline}
+			\listofalgorithms
+		\endgroup
+	}{}
+	
+	\addcontentsline{toc}{chapter}{Índice de Algoritmos} 
 }%
-
-
 %
 % ====================================================================
 % Página: Resumen
@@ -588,13 +658,13 @@
 \newcommand{\paginaResumen}[2]{%
 	\newpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{RESUMEN} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Resumen} % Agregar contenido a la tabla de contenidos
 	\begin{center}
-		\textbf{RESUMEN} \\
+		\textbf{Resumen} \\
 	\end{center}
 	#1 \\
 	\par
-	\textbf{PALABRAS CLAVES:} #2 
+	\textbf{Palabras claves:} #2 
 	
 	\pagenumbering{arabic}	
 }
@@ -606,13 +676,13 @@
 \newcommand{\paginaAbstract}[2]{%
 	\newpage
 	\phantomsection
-	\addcontentsline{toc}{chapter}{ABSTRACT} % Agregar contenido a la tabla de contenidos
+	\addcontentsline{toc}{chapter}{Abstract} % Agregar contenido a la tabla de contenidos
 	\begin{center}
-		\textbf{ABSTRACT} \\
+		\textbf{Abstract} \\
 	\end{center}
 	#1 \\
 	\par
-	\textbf{KEYWORDS:} #2 	
+	\textbf{Keywords:} #2 	
 }
 %
 % ====================================================================
@@ -639,6 +709,8 @@
 \newenvironment{UnnumberedChapter}[1]
 {%
 	\setcounter{secnumdepth}{-1}
+	\setlength{\parindent}{1.27cm} 	% agregar sangría
+	
 	% modificar formato de título para el capitulo
 	\titleformat{\chapter}[hang]{}{}{}{\normalfont\filcenter\bfseries}
 	\titleformat{\section}[hang]{\normalfont\scshape\bfseries}{}{0pt}{}
@@ -647,8 +719,9 @@
 	\titleformat{\paragraph}[runin]{\normalfont\scshape\bfseries}{}{0pt}{}
 	\titleformat{\subparagraph}[runin]{\normalfont\scshape\bfseries}{}{0pt}{}
 	
-	\titlespacing{\chapter}{0pt}{0pt}{4ex}
-	\titlespacing*{\subsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\chapter}{0pt}{-5mm}{2.3ex plus .2ex}
+	\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+	\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\subsubsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\paragraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
@@ -664,136 +737,86 @@
 %
 \newcommand{\ChapterFormat}{%
 	\setcounter{secnumdepth}{5}
-%	\renewcommand{\thechapter}{\Roman{chapter}}
-	
-	\titleformat{\chapter}										% comand: \part, chapter, \section, etc
-		[display]												% shape
-		{\vfill\Large\filcenter\bfseries}								% format: format to be applied to the whole title-label and text  
-		{\Large\MakeUppercase{\chaptertitlename} \thechapter}  	% label
-		{1pc}													% sep: horizontal separation between label and title body and must be a length
-		{}														% before-code: code preceding the title body
-		[\vfill\clearpage]										% after-code: code following the title body
+	\setlength{\parindent}{1.27cm}		% agregar sangría
 
-	\titleformat{\section}
-	{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
-	\titleformat{\subsection}
-	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
-	\titleformat{\subsubsection}
-	{\normalfont\large\bfseries}{\thesubsubsection .}{0.5em}{\itshape}
-	\titleformat{\paragraph}[runin]
-	{\normalfont\largek}{\theparagraph .}{0.5em}{\itshape}
-	\titleformat{\subparagraph}[runin]
-	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
+	\titleformat{\chapter}[display]{\vfill\filcenter\bfseries}{\chaptertitlename \hspace{1pt} \numberstring{chapter}}{1pc}{}									
+	\titleformat{\section}{\bfseries}{\thesection}{0.5em}{}
+	\titleformat{\subsection}{\bfseries\itshape}{\thesubsection}{0.5em}{}
+	\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{0.5em}{}[. ]
+	\titleformat{\paragraph}[runin]{\bfseries\itshape}{\theparagraph}{0.5em}{\itshape}[. ]
+	\titleformat{\subparagraph}[runin]{}{\thesubparagraph}{0.5em}{}[. ]
 	
-	\titlespacing*{\chapter}{0pt}{50pt}{40pt}
+	\titlespacing*{\chapter}{0pt}{-1cm}{2.3ex plus .2ex}
 	\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-	\titlespacing*{\subsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\subsubsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\paragraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
 	\renewcommand{\tablename}{Tabla}
-%	\renewcommand{\chaptername}{Capítulo}
 }
 %
 % ====================================================================
-% Chapters Format
+% Appendices Format
 % ====================================================================
 %
-\newcommand{\AppendicesFormat}{%
+\newcommand{\AppendicesFormat}[2]{%
 	
-	% Título de capítulo: Anexos
-	\newpage
-	\addcontentsline{toc}{chapter}{ANEXOS} % Agregar contenido a la tabla de contenidos
-	\begin{center}
-		\vspace*{\fill}
-			{\Large \textbf{ANEXOS}}
-		\vspace*{\fill}	
-	\end{center}
-	\newpage
-
+	% Título de capítulo: Apéndice
+	\addcontentsline{toc}{chapter}{Apéndice} % Agregar contenido a la tabla de contenidos
+	
 	\setcounter{secnumdepth}{5}
-	%	\renewcommand{\thechapter}{\Roman{chapter}}
 	
-	\titleformat{\chapter}										% comand: \part, chapter, \section, etc
-	{\normalfont\Large\bfseries}{\Large\MakeUppercase{\appendixname \hspace{1pt}  \thechapter .}}{0.5em}{}
+	\titleformat{\chapter}			% comand: \part, chapter, \section, etc
+	{\normalfont\filcenter\bfseries}{\appendixname\hspace{2pt}\thechapter .}{0.5em}{}
 	
-	\titleformat{\section}
-	{\normalfont\large\bfseries}{\thesection .}{0.5em}{}
-	\titleformat{\subsection}
-	{\normalfont\large\bfseries}{\thesubsection .}{0.5em}{}
-	\titleformat{\subsubsection}
-	{\normalfont\large\bfseries\itshape}{\thesubsubsection .}{0.5em}{}
-	\titleformat{\paragraph}[runin]
-	{\normalfont\large\itshape}{\theparagraph .}{0.5em}{}
-	\titleformat{\subparagraph}[runin]
-	{\normalfont\large\scshape}{\thesubparagraph .}{0.5em}{}
+	\titleformat{\section}{\bfseries}{\thesection}{0.5em}{}
+	\titleformat{\subsection}{\bfseries\itshape}{\thesubsection}{0.5em}{}
+	\titleformat{\subsubsection}[runin]{\bfseries}{\thesubsubsection}{0.5em}{}[. ]
+	\titleformat{\paragraph}[runin]{\bfseries\itshape}{\theparagraph}{0.5em}{\itshape}[. ]
+	\titleformat{\subparagraph}[runin]{}{\thesubparagraph}{0.5em}{}[. ]
 	
-	\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
+	\titlespacing*{\chapter}{0pt}{3.5ex plus 1ex minus .2ex}{2ex plus .2ex}
 	\titlespacing*{\section}{0pt}{3.5ex plus 1ex minus .2ex}{2.3ex plus .2ex}
-	\titlespacing*{\subsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+	\titlespacing*{\subsection}{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\subsubsection}{20pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
 	\titlespacing*{\paragraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	\titlespacing*{\subparagraph}{20pt}{3.25ex plus 1ex minus .2ex}{1em}
 	
 	\renewcommand{\figurename}{Figura}
 	\renewcommand{\tablename}{Tabla}
-	\renewcommand{\appendixname}{Anexo}
+	\renewcommand{\appendixname}{Apéndice}
 	%
+	\begin{appendices}
+		%
+		\chapter*{Apéndice}
+		\vspace{-5mm}
+		\renewcommand{\thechapter}{\arabic{chapter}}
+		{\let\clearpage\relax #1}
+		#2
+	\end{appendices}
 }
 %
 % ====================================================================
-% Caption Extra UTPL: Inclusión de fuente y elaboración
+% Caption Notra UTPL: Inclusión de fuente y elaboración
 % ====================================================================
-\newcommand{\FigExtraCaptionUTPL}[2]{%
-	\caption*{%
-		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
-			Fuente: #1 \\ 
-			Elaborado por: #2
-		}
-	}
-}
-%
-% Caption extra UTPL for Longtable (SE mantiene por compatibilidad)
-\newcommand{\FigExtraCaptionUTPLLongtable}[2]{%
-	\caption*{%
-		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
-			\hspace{-3px}Fuente: #1 \\ 
-			Elaborado por: #2
-		}
-	}
-}
-% Caption extra UTPL for Longtable
-\newcommand{\LgTbExtraCaptionUTPL}[2]{%
-	\caption*{%
-		{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
-			\hspace{-3px}Fuente: #1 \\ 
-			Elaborado por: #2
-		}
-	}
-}
-%
-% Caption extra UTPL for Algorithm
-\newcommand{\AlgExtraCaptionUTPL}[2]{%
-	{\small %  Letra Arial 9 (tamaño menor al del titulo de la figura o tabla)
-		Fuente: #1 \\[-6pt]
-		Elaborado por: #2 
-	}
+\newcommand{\NotaCaptionUTPL}[1]{%
+	\vspace{5pt}
+	\caption*{\textit{Nota:} \normalfont{#1}}%
 }
 %
 % ====================================================================
 % Página: Bibliografía
 % ====================================================================
 %
-\newcommand{\paginaBibliografia}[1]{%
+\newcommand{\paginaBibliografia}{%
 	\newpage
-	\titleformat{\chapter}[hang]{}{}{}{\large\filcenter\bfseries}
+	\titleformat{\chapter}[hang]{}{}{}{\filcenter\bfseries}
 	\titlespacing{\chapter}{0pt}{0pt}{4ex}
-	\renewcommand{\bibname}{BIBLIOGRAFÍA}
-
-	\nocite{*} % The "nocite" command can be used to print references that haven't been used in the document. The "*" option specifies that every reference should be printed
-	#1
-	\addcontentsline{toc}{chapter}{BIBLIOGRAFÍA} % Addition of the bibliography in the table of contents
+	\renewcommand{\bibname}{Referencias}
+	%
+	\printbibliography 
+	\addcontentsline{toc}{chapter}{Referencias} % Addition of the bibliography in the table of contents
 }
 
 

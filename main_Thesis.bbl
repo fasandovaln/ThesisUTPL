@@ -1,37 +1,92 @@
-\begin{thebibliography}{}
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.1 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
 
-\bibitem[Liu et~al., 2010]{liu2010harq}
-Liu, F., Pan, Z., and Chen, L. (2010).
-\newblock {HARQ} method and system.
 
-\bibitem[Proakis and Salehi, 2008]{proakis2008digital}
-Proakis, J.~G. and Salehi, M. (2008).
-\newblock {\em Digital Communications}, chapter 7-8, pages 400--589.
-\newblock McGraw-Hill, New York, NY, USA, 5th edition.
+\refsection{0}
+  \datalist[entry]{apa/global//global/global}
+    \entry{sandoval2017hybrid}{article}{}
+      \name{author}{3}{}{%
+        {{un=0,uniquepart=base,hash=9e99fe025d2f715c7e70ab3e23df94d5}{%
+           family={Sandoval},
+           familyi={S\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=855d8c1ebd4b47321fe8398470dfa571}{%
+           family={Poitau},
+           familyi={P\bibinitperiod},
+           given={G.},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{un=0,uniquepart=base,hash=974f7f36fea590cfd06832592146cb42}{%
+           family={Gagnon},
+           familyi={G\bibinitperiod},
+           given={F.},
+           giveni={F\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{a074398171aa93176364f98bc5b76ed3}
+      \strng{fullhash}{78d81f97b106c84c66016e2eb67571c3}
+      \strng{bibnamehash}{78d81f97b106c84c66016e2eb67571c3}
+      \strng{authorbibnamehash}{78d81f97b106c84c66016e2eb67571c3}
+      \strng{authornamehash}{a074398171aa93176364f98bc5b76ed3}
+      \strng{authorfullhash}{78d81f97b106c84c66016e2eb67571c3}
+      \field{sortinit}{S}
+      \field{sortinithash}{c319cff79d99c853d775f88277d4e45f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{IEEE Access}
+      \field{note}{{DOI}: \url{10.1109/ACCESS.2017.2775859}}
+      \field{title}{Hybrid Peak-to-Average Power Ratio Reduction Techniques: Review and Performance Comparison}
+      \field{volume}{5}
+      \field{year}{2017}
+      \field{pages}{27145\bibrangedash 27161}
+      \range{pages}{17}
+      \keyw{OFDM modulation;error statistics;optimisation;radio networks;signal classification;BER;OFDM signal;PAPR problem;PAPR reduction techniques;bit error rate;bit rate reduction;hybrid peak-to-average power ratio reduction techniques;hybrid techniques;multicarrier modulation technique;optimization;orthogonal frequency division multiplexing;performance comparison;performance evaluation;review;wireless communication;Bit error rate;Gain;MIMO;Modulation;Peak to average power ratio;Wireless communication;Orthogonal frequency division multiplexing;commercial communication;high power amplifier;hybrid PAPR reduction technique;peak-to-average power ratio;tactical communication}
+    \endentry
+    \entry{utpl2008campus}{online}{}
+      \name{author}{1}{}{%
+        {{un=0,uniquepart=base,hash=b7245447faa437d33fee1e8c0290118c}{%
+           family={UTPL},
+           familyi={U\bibinitperiod}}}%
+      }
+      \strng{namehash}{b7245447faa437d33fee1e8c0290118c}
+      \strng{fullhash}{b7245447faa437d33fee1e8c0290118c}
+      \strng{bibnamehash}{b7245447faa437d33fee1e8c0290118c}
+      \strng{authorbibnamehash}{b7245447faa437d33fee1e8c0290118c}
+      \strng{authornamehash}{b7245447faa437d33fee1e8c0290118c}
+      \strng{authorfullhash}{b7245447faa437d33fee1e8c0290118c}
+      \field{sortinit}{U}
+      \field{sortinithash}{77a6935510e008adcf5b555e7b4f0711}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \true{uniqueprimaryauthor}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{note}{\url{https://www.flickr.com/photos/utpl/2423561295/in/album-72157604594546005/}}
+      \field{title}{Campus}
+      \field{year}{2008}
+      \warn{\item Entry 'utpl2008campus' (BibliographyUTPL.bib): Invalid format '19 de abril de 2008' of date field 'date' - ignoring}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
 
-\bibitem[Ramezani, 2007]{ramezani2007ofdm}
-Ramezani, H. (2007).
-\newblock {\em {OFDM} High Power Amplifier Effects}.
-\newblock {MATLAB} Central File Exchange.
-\newblock \url{https://www.mathworks.com/matlabcentral/fileexchange/15331}.
-
-\bibitem[Sandoval et~al., 2017]{sandoval2017hybrid}
-Sandoval, F., Poitau, G., and Gagnon, F. (2017).
-\newblock Hybrid peak-to-average power ratio reduction techniques: Review and
-  performance comparison.
-\newblock {\em IEEE Access}, 5:27145--27161.
-\newblock {DOI}: \url{10.1109/ACCESS.2017.2775859}.
-
-\bibitem[UTPL, 2008]{utpl2008campus}
-UTPL (2008).
-\newblock Campus.
-\newblock
-  \url{https://www.flickr.com/photos/utpl/2423561295/in/album-72157604594546005/}.
-
-\bibitem[Yi and Linfeng, 2009]{yi2009investigation}
-Yi, W. and Linfeng, G. (2009).
-\newblock {\em An Investigation of Peak-to-Average Power Reduction in
-  {MIMO-OFDM} Systems}.
-\newblock PhD thesis, Blekinge Institute of Technology, Blekinge, Sweden.
-
-\end{thebibliography}

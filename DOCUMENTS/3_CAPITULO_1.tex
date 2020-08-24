@@ -3,6 +3,9 @@
 % ====================================================================
 % Creado por: Francisco Alberto Sandoval Noreña
 % e-mail: fasandoval@utpl.edu.ec
+%
+% Version 2.0.0
+% Date: 20/08/2020
 % 
 % Version 1.2.2
 % Date: 28/02/2020
@@ -15,7 +18,7 @@
 % ====================================================================
 %
 
-\chapter{FORMATO DE LOS CAPÍTULOS}
+\chapter{Formato de capítulos}
 
 \section{Descripción de la plantilla}
 
@@ -53,8 +56,9 @@ El documento final generado (en formato PDF) tendrá la siguiente estructura:
 	\item \textbf{Dedicatoria}. La información de la dedicatoria puede ser ingresada en el archivo PRE-CAPÍTULOS. 
 	\item \textbf{Agradecimiento}. La información de los agradecimientos puede ser ingresado en el archivo PRE-CAPÍTULOS. 
 	\item \textbf{Índice de Contenidos}. El Índice de Contenidos se genera automáticamente. 
-	\item \textbf{Lista de Figuras}. La Lista de Figuras se genera automáticamente. 
-	\item \textbf{Lista de Tablas}. La Lista de Tablas se genera automáticamente. 
+	\item \textbf{Índice de Figuras}. El Índice de Figuras se genera automáticamente. 
+	\item \textbf{Índice de Tablas}. El Índice de Tablas se genera automáticamente.
+	 \item \textbf{Índice de Algoritmos}. El Índice de Algoritmos se genera automáticamente si se selecciona la opción ``Y'' para la variable: \lstinline|\listOfAlgorithmsQ{Y}|.
 	\item \textbf{Resumen y Palabras Claves}. La información del Resumen y las Palabras Claves puede ser ingresado en el archivo PRE-CAPÍTULOS.
 	\item \textbf{Abstract and Keywords}. La información del Abstract y los Keywords puede ser ingresado en el archivo PRE-CAPÍTULOS.
 	\item \textbf{Lista de Abreviaturas}. (Opcional) La información de la Lista de Abreviaturas puede ser ingresada en el archivo PRE-CAPÍTULOS. Si no va a utilizar esta sección puede comentarla. 
@@ -63,15 +67,15 @@ El documento final generado (en formato PDF) tendrá la siguiente estructura:
 	\item \textbf{Capítulos de la Tesis}. Se recomienda escribir cada capítulo en un archivo diferente. Los capítulos agregados aquí son únicamente de ejemplo. Usted puede comentarlos y agregar sus archivos.  
 	\item \textbf{Conclusiones}. Las conclusiones deben ser agregadas en el archivo CONCLUSIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.  
 	\item \textbf{Recomendaciones}. Las recomendaciones deben ser agregadas en el archivo RECOMENDACIONES que se encuentra en la carpeta DOCUMENTS. Igual que la Introducción puede emplear secciones o subsecciones pero estas no se numerarán.   	
-	\item \textbf{Bibliografía}. Se puede escoger entre dos estilos para citar: APA o IEEE.
-	\item \textbf{Anexos}. Se recomienda crear los Anexos en archivos separados. El archivo ANEXO1 es un ejemplo que puede comentar para incluir su información.   
+	\item \textbf{Bibliografía}. Se debe emplear el formato APA séptima edición. Ya se encuentra implementado en el formato. 
+	\item \textbf{Apéndice}. Se recomienda crear los Apéndices en archivos separados. El archivo APENDICE1 es un ejemplo que puede comentar para incluir su información.   
 \end{itemize}
 
 \section{Clase de documento y opciones}
 
 Para utilizar la plantilla se debe emplear la clase creada para el efecto de la siguiente manera: 
 
-\lstinline|\documentclass[unAutor, APA, hiperenlaces]{ThesisUTPL}| 
+\lstinline|\documentclass[unAutor, hiperenlaces]{ThesisUTPL}| 
 
 Las posibles opciones con las que se puede configurar el documento son: 
 
@@ -80,11 +84,6 @@ Las posibles opciones con las que se puede configurar el documento son:
 	\textit{Opciones posibles:} ``unAutor'', ``dosAutores'', ``tresAutores''. \\
 	\textit{Valor por defecto:} ``unAutor''.
 	%
-	\item \textbf{Estilo de Bibliografía:} Permite determinar el estilo para la bibliografía y las citas en el texto. \\
-	\textit{Opciones posibles:} ``APA'', ``IEEE''.\\
-	\textit{Valor por defecto:} ``APA''. \\
-	\textit{Nota:} Por favor considerar las instrucciones de compilación sugeridas en la Sección \ref{sec:Bibliografia}.
-	
 	\item \textbf{Hiperenlaces:} Permite habilitar los hiperenlaces a lo largo de todo el documento. Esto cubre el índice de contenidos, enlaces url, citas, y otros. \\
 	\textit{Opción posible:} ``hiperenlaces''. 
 	
@@ -122,7 +121,11 @@ A continuación se presenta los paquetes empleados en la plantilla. Usted puede 
 	\texttt{fancyhdr} 	& \textit{Page layout.}\\
 	\texttt{caption} 	& \textit{The caption package provides many ways to customise the captions infloating environments such figure and table.}\\
 	\texttt{natbib} 	& \textit{package that implements both author-year and numbered references.} \\
-	\texttt{algorithm2e}& \textit{Algorithm2e is an environment for writing algorithms in LATEX.}
+	\texttt{algorithm2e}& \textit{Algorithm2e is an environment for writing algorithms in LATEX.} \\
+	\texttt{titlesec}	& \textit{Select alternative section titles.} \\
+	\texttt{csquotes}	& \textit{} \\
+	\texttt{fmtcount}	& \textit{}
+		
 \end{longtable} 
 
 
@@ -132,32 +135,42 @@ A continuación se presenta algunos ejemplos de opciones que pueden usarse en el
 
 \subsection{Figuras}
 
-Para las figuras emplee el entorno ``figure'' según el ejemplo mostrado en la Fig. \ref{fig:utplcruz}. Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la figura en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la figura respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaborado por'', respectivamente. Los demás comandos son los habituales. 
+Para las figuras emplee el entorno ``figure'' según el ejemplo mostrado en la Fig. \ref{fig:utplcruz}. Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la figura en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la figura respecto al ancho de la página. Por otra parte, el comando \lstinline|\\NotaCaptionUTPL{}| permite introducir la ``Nota:''. Los demás comandos son los habituales. 
+
+Para la nota considere las siguientes recomendaciones dadas desde la Biblioteca de la UTPL: 
+\begin{itemize}
+	\item La ``Nota:'' sirve para describir el contenido de la figura (o tabla) que no pueden entenderse solo con el título o con los mismos datos, para explicar abreviaturas y para citar la fuente, o todos elementos anteriores, según sea el caso.
+	
+	\item No es necesario informar que la figura (o tabla) es de elaboración propia, todo lo que no está citado es creación del investigador.
+	
+	\item Si parafraseas información de alguna fuente, coloca en Nota adaptado de apellido del autor y año o fecha de la fuente de consulta. 
+	Ejemplo: Nota. Adaptado de Rojas (2019).
+	
+	\item Si colocas contenido textual de una fuente de consulta en el desarrollo de la figura (o tabla), el mismo debe ir entre comillas e identificarlo mediante el uso de un superíndice con letras minúsculas y escribe en Nota Apellido de autor (año de publicación, p. \#).
+	
+	\item Ejemplo: Nota. Castillo (2019, p. 89). Jaramillo (2019, p. 15).
+\end{itemize}
 
 Para referirse a una figura en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. También se puede emplear el comando \lstinline|\autoref{}|, por ejemplo: \autoref{fig:utplcruz}. La diferencia radica en que al emplear  \autoref{fig:utplcruz} el comando agrega la palabra reservada según el tipo de entorno que se utilice, en este caso, ``Figura''. Cuando emplea \lstinline|\ref{}| usted debe agregar la palabra ``Figura'' por teclado. 
 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{width=0.7\textwidth}
-	\includegraphics[width=0.7\linewidth]{FIGURES/UTPL_cruz}
 	\caption{Campus UTPL}
-	\FigExtraCaptionUTPL 			% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}
-		{\cite{utpl2008campus}}		% Fuente
-		{UTPL}			% Elaboración
 	\label{fig:utplcruz}
+	\includegraphics[width=0.7\linewidth]{FIGURES/UTPL_cruz}
+	\NotaCaptionUTPL{Fotografía de la Universidad Técnica Particular de Loja (UTPL) \autocite{utpl2008campus}}
 \end{figure}
 
 \begin{figure}[h!]
 	\centering
 	\captionsetup{width=0.9\textwidth}
-	\includegraphics[width=0.9\linewidth]{FIGURES/UTPL_MuralPi}
 	\caption{Mural del número $ \pi $ en el Campus de la UTPL: Mosaico de 1800 cifras decimales diseñado por Hno. Ticiano García (1974).}
-	\FigExtraCaptionUTPL 			% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}
-	{Autor}		% Fuente
-	{Autor}      % Elaboración
 	\label{fig:utplcruz2}
+	\includegraphics[width=0.9\linewidth]{FIGURES/UTPL_MuralPi}
 \end{figure}
 
+\vspace{-1cm}
 Además, recuerde que está incluido en la plantilla el paquete \texttt{subfigure} que le permite incluir sub-figuras en el texto. 
 
 
@@ -179,47 +192,44 @@ La descripción completa del paquete la puede encontrar en la página de los aut
 
 
 \subsection{Tablas}
-Para la elaboración de tablas se recomienda usar el entorno ``table''. De acuerdo al ejemplo presentado (ver Tabla \ref{tb:Ejemplo}). Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la tabla en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la tabla respecto al ancho de la página. Por otra parte, el comando \lstinline|\FigExtraCaptionUTPL{}{}| permite introducir la ``Fuente'' y ``Elaboración'', respectivamente. Los demás comandos son los habituales. 
+Para la elaboración de tablas se recomienda usar el entorno ``table''. De acuerdo al ejemplo presentado (ver Tabla \ref{tb:Ejemplo}). Emplee el comando \lstinline|\captionsetup{width=n\textwidth}| donde ``n'' es un número entre 0 y 1 que representa el espacio que ocupa el título de la tabla en relación al ancho del texto. Este parámetro debe ajustarse en razón del tamaño de la tabla respecto al ancho de la página. Por otra parte, el comando \lstinline|\NotaCaptionUTPL{}| permite introducir la ``Nota:''. Los demás comandos son los habituales. 
 
 Para referirse a una tabla en el texto emplee el comando \lstinline|\ref{}| incluyendo la etiqueta que corresponda. También se puede emplear el comando \lstinline|\autoref{}|, por ejemplo: \autoref{tb:Ejemplo}.
 
 \begin{table}[]
 	\centering
-	\captionsetup{width=0.44\textwidth}
+	\captionsetup{width=0.4\textwidth}
 	\caption{Ejemplo de tabla}
 	\label{tb:Ejemplo}
-	\begin{tabular}{|l|l|l|}
-		\hline
-		\textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\ \hline
-		ítem 1             & ítem 2             & ítem 3             \\ \hline
-		ítem 4             & ítem 5             & ítem 6             \\ \hline
-		ítem 7             & ítem 8             & ítem 9             \\ \hline
+	\begin{tabular}{@{}ccc@{}}
+		\toprule
+		\textbf{Columna 1} & \textbf{Columna 2} & \textbf{Columna 3} \\ \midrule
+		ítem 1 & ítem 2 & ítem 3 \\
+		ítem 4 & ítem 5 & ítem 6 \\
+		ítem 7 & ítem 8 & ítem 9 \\ \bottomrule
 	\end{tabular}
-	\vspace{3pt}
-	\FigExtraCaptionUTPL		% \FigExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
-		{Autor}					% Fuente
-		{Autor} 				% Elaboración			
+	\NotaCaptionUTPL{}
 \end{table}
 
-En el caso de tener en su texto tablas extensas de más de una página, puede emplear el entorno \lstinline|longtable| cuyo paquete ya se encuentra adicionado al formato. Sin embargo, debe emplear \lstinline|\FigExtraCaptionUTPLLongtable{}{}| para agregar la fuente y la elaboración. En la \autoref{tb:TablaLarga} se presenta un ejemplo. 
+En el caso de tener en su texto tablas extensas de más de una página, puede emplear el entorno \lstinline|longtable| cuyo paquete ya se encuentra adicionado al formato. En la \autoref{tb:TablaLarga} se presenta un ejemplo. 
 
 \begin{longtable}{|c|c|c|c|}
-	\captionsetup{width=0.9\textwidth}
+	\captionsetup{width=0.82\textwidth}
 	\caption{Un ejemplo simple de tabla larga} 	
 	\label{tb:TablaLarga}\\
 	\hline
 	\textbf{Primera columna} & \textbf{Segunda columna} & \textbf{Tercera columna} & \textbf{Cuarta columna} \\
 	\hline
 	\endfirsthead
-%	\multicolumn{4}{c}%
-	\caption*{\tablename{} \thetable: (continuación)} \\
+
+	\caption*{\normalfont\textbf{\tablename{} \thetable} \\ \textit{(Continuación)}} \\
 
 	\hline
 	\textbf{Primera columna} & \textbf{Segunda columna} & \textbf{Tercera columna} & \textbf{Cuarta columna} \\
 	\hline
 	\endhead
-%		\hline
 	\endlastfoot
+		
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
@@ -228,12 +238,9 @@ En el caso de tener en su texto tablas extensas de más de una página, puede em
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
 	1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\ 1 & 2 & 3 & 4 \\
-	\hline
-	\LgTbExtraCaptionUTPL % \LgTbExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
-		{Autor}					% Fuente
-		{Autor} 				% Elaboración	
+	\hline	
+	\caption*{\textit{Nota:} Esta es la nota.}
 \end{longtable}
-
 
 \subsection{Ecuaciones}
 Para las ecuaciones numeradas emplee el entorno ``equation'' (ver \eqref{eq:Ecuacion_Shannon-Hartley}). Las ecuaciones se numeran por capítulo. Emplee  \lstinline|\eqref{}| para referirse a una ecuación particular.  
@@ -247,7 +254,7 @@ C = B \log_{2} \left( 1 + \frac{S}{N} \right)
 Para agregar algoritmos en el texto usted puede hacer uso del paquete \lstinline|algorithm2e| el cual ya se encuentra adicionado en la clase. Como ejemplo se presenta el \autoref{alg:EjemploAlgoritmo}. 
 
 
-\begin{algorithm}[H]
+\begin{algorithm}[]
 	\caption{Esquema A, otimização conjunta do $\mathbf{D}$ e $ \mathbf{v} $}
 	\label{alg:EjemploAlgoritmo}
 	
@@ -266,24 +273,27 @@ Para agregar algoritmos en el texto usted puede hacer uso del paquete \lstinline
 		}
 	}
 \end{algorithm} 
-\AlgExtraCaptionUTPL % \AlgExtraCaptionUTPL{''Fuente''}{''Elaboración''}	
-	{Autor}					% Fuente
-	{Autor} 				% Elaboración
 
 
 
-\subsection{Bibliografía}
+\subsection{Referencias}
 \label{sec:Bibliografia}
-La plantilla permite utilizar dos estilos para citar, a saber: APA e IEEE. Pueden elegirse como opción de la clase \textit{ThesisUTPL}. El estilo APA se encuentra por defecto. Para citar empleando el estilo APA se utiliza \textit{natbib} y para el estilo IEEE \textit{bibtex}. 
+Deben constar en orden alfabético todos los documentos que utilizó para sustentar su Trabajo de Titulación (TT) de acuerdo a las Normas de Citación y Referencia APA 7ma edición (Libros, revistas, folletos, documentos, páginas web de relevancia, entre otros). 
 
-Puede agregar más de un archivo de bibliografía. Como ejemplo la plantilla presenta el archivo ``\lstinline|BibliographyUTPL|'' el cual se encuentra en la carpeta comprimida de la plantilla en el mismo nivel de carpetas que el archivo principal ``\lstinline|main_Thesis.tex|''. 
+Para la bibliografía se emplea \lstinline|biblatex-apa| \textcolor{red}{y debe ser compilado con \lstinline|biber|.} 
+
+Usted puede citar empleando el comando ``\lstinline|\autocite{}|'' si lo que desea es realizar una cita en donde se enfatiza al autor (Ejemplo: \autocite{sandoval2017hybrid}). Si desea realizar una cita en donde se enfatiza el texto, en cuyo caso la cita debe salir entre paréntesis, emplee el comando ``\lstinline|\textcite{}|'' (Ejemplo: \textcite{sandoval2017hybrid}). Note que para citas enfatizando el texto lo correcto es emplear el comando ``\lstinline|\textcite{}|'' y no es igual que poner entre paréntesis el comando ``\lstinline|\cite{}|''. Además, cuando utilice el estilo APA, \textbf{recuerde siempre} agregar el campo ``\lstinline|year|'' en cada referencia agregada en el archivo ``\lstinline|.bib|'', ya que la ausencia del campo un una sola referencia, genera errores en la compilación de todas la bibliografía.
+
+Puede agregar más de un archivo de bibliografía. Como ejemplo la plantilla presenta el archivo ``\lstinline|BibliographyUTPL|'' el cual se encuentra en la carpeta comprimida de la plantilla en el mismo nivel de carpetas que el archivo principal ``\lstinline|main_Thesis.tex|''.
  
-En el caso de emplear el estilo APA, usted puede citar empleando el comando estandar de Latex ``\lstinline|\cite{}|'' o \lstinline|\citet{}| si lo que desea es realizar una cita en donde se enfatiza al autor. Si desea realizar una cita en donde se enfatiza el texto, en cuyo caso la cita debe salir entre paréntesis, emplee el comando ``\lstinline|\citep{}|''. Note que para citas enfatizando el texto lo correcto es emplear el comando ``\lstinline|\citep{}|'' y no es igual que poner entre paréntesis el comando ``\lstinline|\cite{}|''. Además, cuando utilice el estilo APA, \textbf{recuerde siempre} agregar el campo ``\lstinline|year|'' en cada referencia agregada en el archivo ``\lstinline|.bib|'', ya que la ausencia del campo un una sola referencia, genera errores en la compilación de todas la bibliografía. 
-
-Por ejemplo, la siguiente es una cita empleando ``\lstinline|\cite{}|'': \cite{sandoval2017hybrid}. 
-
-En el caso de emplear el estilo IEEE, \textbf{únicamente puede citar con} ``\lstinline|\cite{}|''. 
-
 En el archivo ``\lstinline|BibliographyUTPL|'' se presentan ejemplos de como ingresar diferentes fuentes bibliográficas, como por ejemplo: libros, artículos, tesis, etc. 
 
-Si usted desea cambiar entre un estilo u otro (IEEE o APA), es preferible que previo a realizar el cambio y compilar, borre los archivos auxiliares para evitar errores inesperados. 
+Para más ejemplos respecto a biblatex y biber puede revisar: \url{https://en.wikibooks.org/wiki/LaTeX/Bibliographies_with_biblatex_and_biber}.
+
+\subsection{Notas al pie}
+
+Ejemplo de nota al pie \footnote{Esta es una nota al pie.}. 
+
+
+
+

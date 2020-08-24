@@ -1,11 +1,18 @@
-This is BibTeX, Version 0.99dThe top-level auxiliary file: main_Thesis.aux
-The style file: apalike.bst
-Database file #1: BibliographyUTPL.bib
-Warning--entry type for "liu2010harq" isn't style-file defined
---line 46 of file BibliographyUTPL.bib
-Warning--I'm ignoring ramezani2007ofdm's extra "note" field
---line 66 of file BibliographyUTPL.bib
-Warning--entry type for "utpl2008campus" isn't style-file defined
---line 69 of file BibliographyUTPL.bib
-Warning--empty chapter and pages in ramezani2007ofdm
-(There were 4 warnings)
+[0] Config.pm:304> INFO - This is Biber 2.14
+[0] Config.pm:307> INFO - Logfile is 'main_Thesis.blg'
+[111] biber-MSWIN64:322> INFO - === 
+[138] Biber.pm:415> INFO - Reading 'main_Thesis.bcf'
+[314] Biber.pm:943> INFO - Found 2 citekeys in bib section 0
+[338] Biber.pm:4256> INFO - Processing section 0
+[339] Utils.pm:75> INFO - Globbing data source 'BibliographyUTPL.bib'
+[352] Utils.pm:91> INFO - Globbed data source 'BibliographyUTPL.bib' to BibliographyUTPL.bib
+[373] Biber.pm:4455> INFO - Looking for bibtex format file 'BibliographyUTPL.bib' for section 0
+[380] bibtex.pm:1653> INFO - LaTeX decoding ...
+[400] bibtex.pm:1471> INFO - Found BibTeX data source 'BibliographyUTPL.bib'
+[428] Utils.pm:304> WARN - Entry 'utpl2008campus' (BibliographyUTPL.bib): Invalid format '19 de abril de 2008' of date field 'date' - ignoring
+[463] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'normalization = NFD' with 'normalization = prenormalized'
+[463] UCollate.pm:68> INFO - Overriding locale 'es-ES' defaults 'variable = shifted' with 'variable = non-ignorable'
+[463] Biber.pm:4084> INFO - Sorting list 'apa/global//global/global' of type 'entry' with template 'apa' and locale 'es-ES'
+[468] bbl.pm:652> INFO - Writing 'main_Thesis.bbl' with encoding 'UTF-8'
+[473] bbl.pm:755> INFO - Output to main_Thesis.bbl
+[474] Biber.pm:128> INFO - WARNINGS: 1
